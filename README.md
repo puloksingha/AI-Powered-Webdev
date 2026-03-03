@@ -31,7 +31,7 @@ Whether you're a beginner or an experienced developer looking to leverage AI in 
 
 | # | Topic | Folder | Files | Status |
 |---|-------|--------|-------|--------|
-| Day 01 | Complete HTML — Zero to Advanced | [`HTML/Day-01/`](HTML/Day-01/) | [`index.html`](HTML/Day-01/index.html) · [`README.md`](HTML/Day-01/README.md) | ✅ Completed |
+| Day 01 | Complete HTML — Zero to Advanced | [`HTML/`](HTML/) | [`index.html`](HTML/index.html) | ✅ Completed |
 | Day 02 | CSS Fundamentals | `HTML/Day-02/` | — | ⏳ Upcoming |
 | Day 03 | CSS Layouts — Flexbox & Grid | `CSS/Day-03/` | — | ⏳ Upcoming |
 | Day 04 | Responsive Web Design | `CSS/Day-04/` | — | ⏳ Upcoming |
@@ -90,9 +90,7 @@ A single-file, zero-dependency **complete HTML reference page** covering every m
 
 | File | Description |
 |------|-------------|
-| [`HTML/Day-01/index.html`](HTML/Day-01/index.html) | Complete HTML reference — zero to advanced, all live examples |
-| [`HTML/Day-01/README.md`](HTML/Day-01/README.md) | Day 01 overview and summary |
-| [`HTML/notes.md`](HTML/notes.md) | Full HTML study notes — 17 sections, cheatsheets, best practices |
+| [`HTML/index.html`](HTML/index.html) | Complete HTML reference — zero to advanced, all live examples |
 
 ### Key Code Example
 
@@ -133,11 +131,9 @@ A single-file, zero-dependency **complete HTML reference page** covering every m
 ```
 AI-Powered-Webdev/
 ├── HTML/
-│   ├── Day-01/
-│   │   ├── index.html        ← Complete HTML reference (zero to advanced)
-│   │   └── README.md         ← Day 01 overview
-│   └── notes.md              ← Full HTML study notes (17 sections)
-└── README.md                 ← This file
+│   └── index.html        ← Complete HTML reference (zero to advanced)
+├── LICENSE               ← MIT License
+└── README.md             ← This file
 ```
 
 ---
