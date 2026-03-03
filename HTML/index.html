@@ -1,0 +1,1209 @@
+<!DOCTYPE html>
+<!--
+  ╔══════════════════════════════════════════════════════════════╗
+  ║        COMPLETE HTML — ZERO TO ADVANCED                      ║
+  ║        AI-Powered Web Development | Day-01                   ║
+  ║        Covers: Every major HTML concept with examples        ║
+  ╚══════════════════════════════════════════════════════════════╝
+-->
+
+<!-- ============================================================
+  1. DOCUMENT STRUCTURE
+  - <!DOCTYPE html> tells the browser this is an HTML5 document.
+  - <html lang="en"> is the root element; lang helps screen readers & SEO.
+  ============================================================ -->
+<html lang="en">
+
+<!-- ============================================================
+  2. HEAD SECTION
+  Contains metadata — not visible on the page, but critical for
+  browsers, search engines, and social media platforms.
+  ============================================================ -->
+<head>
+
+  <!-- Character encoding — always UTF-8 for full Unicode support -->
+  <meta charset="UTF-8" />
+
+  <!-- Responsive viewport — essential for mobile-friendly design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ── SEO Meta Tags ──────────────────────────────────────── -->
+  <meta name="description" content="Complete HTML guide from zero to advanced covering every HTML element and concept." />
+  <meta name="keywords" content="HTML, web development, AI, tutorial, complete guide" />
+  <meta name="author" content="Pulok" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- ── Open Graph (Social Media Preview) ─────────────────── -->
+  <meta property="og:title" content="Complete HTML — Zero to Advanced" />
+  <meta property="og:description" content="A comprehensive HTML reference covering every concept." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://example.com/day-01" />
+  <meta property="og:image" content="https://via.placeholder.com/1200x630" />
+
+  <!-- ── Twitter Card ──────────────────────────────────────── -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Complete HTML — Zero to Advanced" />
+  <meta name="twitter:description" content="Every HTML concept in one file." />
+
+  <!-- ── Theme Color (Browser UI color on mobile) ──────────── -->
+  <meta name="theme-color" content="#0f172a" />
+
+  <!-- ── Favicon ───────────────────────────────────────────── -->
+  <link rel="icon" type="image/png" href="favicon.png" />
+
+  <!-- ── Canonical URL (SEO — avoid duplicate content) ─────── -->
+  <link rel="canonical" href="https://example.com/day-01" />
+
+  <!-- ── Preconnect (performance — speed up external fonts) ── -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- ── Google Fonts ──────────────────────────────────────── -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Fira+Code&display=swap" rel="stylesheet" />
+
+  <!-- ── Page Title (shown in browser tab & search results) ── -->
+  <title>Complete HTML — Zero to Advanced | AI-Powered Web Dev</title>
+
+  <!-- ── Internal CSS (for clean page appearance) ─────────── -->
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #0f172a;
+      color: #e2e8f0;
+      line-height: 1.7;
+      padding: 0 16px;
+    }
+    .page-wrapper { max-width: 900px; margin: 0 auto; padding: 40px 0 80px; }
+    h1 { font-size: 2.5rem; color: #38bdf8; margin-bottom: 8px; }
+    h2 { font-size: 1.6rem; color: #7dd3fc; margin: 48px 0 12px; border-bottom: 1px solid #1e3a5f; padding-bottom: 6px; }
+    h3 { font-size: 1.1rem; color: #93c5fd; margin: 24px 0 8px; }
+    h4, h5, h6 { color: #bae6fd; margin: 16px 0 6px; }
+    p  { margin-bottom: 12px; color: #cbd5e1; }
+    a  { color: #38bdf8; text-decoration: underline; }
+    a:hover { color: #7dd3fc; }
+    code { font-family: 'Fira Code', monospace; background: #1e293b; color: #f472b6; padding: 2px 6px; border-radius: 4px; font-size: 0.88rem; }
+    pre  { background: #1e293b; border: 1px solid #334155; border-radius: 8px; padding: 20px; overflow-x: auto; margin: 12px 0 20px; }
+    pre code { background: none; padding: 0; color: #a5f3fc; font-size: 0.88rem; }
+    section { margin-bottom: 16px; }
+    .badge { display: inline-block; background: #0ea5e9; color: #fff; font-size: 0.75rem; font-weight: 700; padding: 2px 10px; border-radius: 20px; margin-right: 6px; }
+    .card { background: #1e293b; border: 1px solid #334155; border-radius: 10px; padding: 20px; margin: 12px 0; }
+    table { width: 100%; border-collapse: collapse; margin: 12px 0 20px; }
+    th { background: #1e3a5f; color: #7dd3fc; padding: 10px 14px; text-align: left; }
+    td { padding: 9px 14px; border-bottom: 1px solid #1e293b; color: #cbd5e1; }
+    tr:nth-child(even) td { background: #162032; }
+    ul, ol { margin-left: 24px; margin-bottom: 12px; color: #cbd5e1; }
+    li { margin-bottom: 4px; }
+    dl dt { font-weight: 700; color: #7dd3fc; }
+    dl dd { margin-left: 20px; margin-bottom: 8px; color: #94a3b8; }
+    blockquote { border-left: 4px solid #0ea5e9; background: #1e293b; padding: 14px 20px; margin: 12px 0; border-radius: 0 8px 8px 0; font-style: italic; color: #94a3b8; }
+    hr { border: none; border-top: 1px solid #334155; margin: 40px 0; }
+    abbr { text-decoration: underline dotted; cursor: help; color: #93c5fd; }
+    mark { background: #fbbf24; color: #0f172a; padding: 0 4px; border-radius: 3px; }
+    del  { color: #ef4444; }
+    ins  { color: #22c55e; text-decoration: underline; }
+    sub, sup { font-size: 0.75rem; }
+    /* Form styling */
+    fieldset { border: 1px solid #334155; border-radius: 8px; padding: 16px; margin: 12px 0; }
+    legend   { color: #7dd3fc; font-weight: 600; padding: 0 8px; }
+    label    { display: block; color: #94a3b8; font-size: 0.9rem; margin-bottom: 4px; }
+    input, textarea, select { width: 100%; background: #0f172a; border: 1px solid #334155; color: #e2e8f0; border-radius: 6px; padding: 9px 12px; margin-bottom: 12px; font-family: inherit; font-size: 0.95rem; outline: none; }
+    input:focus, textarea:focus, select:focus { border-color: #38bdf8; box-shadow: 0 0 0 2px rgba(56,189,248,0.15); }
+    input[type="checkbox"], input[type="radio"] { width: auto; margin-right: 8px; }
+    button, input[type="submit"], input[type="reset"] { width: auto; background: #0ea5e9; color: #fff; border: none; border-radius: 6px; padding: 9px 22px; cursor: pointer; font-size: 0.95rem; font-weight: 600; margin-right: 8px; }
+    button:hover { background: #38bdf8; }
+    progress, meter { width: 100%; height: 12px; margin: 8px 0; }
+    details { background: #1e293b; border: 1px solid #334155; border-radius: 8px; padding: 12px 16px; margin: 8px 0; }
+    summary { cursor: pointer; color: #7dd3fc; font-weight: 600; }
+    summary:hover { color: #38bdf8; }
+    dialog { background: #1e293b; color: #e2e8f0; border: 1px solid #334155; border-radius: 12px; padding: 28px; max-width: 420px; }
+    dialog::backdrop { background: rgba(0,0,0,0.7); }
+    figure { margin: 12px 0; }
+    figcaption { text-align: center; font-size: 0.82rem; color: #64748b; margin-top: 6px; }
+    .nav-links { display: flex; flex-wrap: wrap; gap: 12px; list-style: none; margin-left: 0; margin-bottom: 0; }
+    .nav-links a { color: #38bdf8; text-decoration: none; font-weight: 600; }
+    canvas { border: 1px solid #334155; border-radius: 6px; display: block; }
+    svg text { fill: #e2e8f0; }
+  </style>
+</head>
+
+<body>
+<div class="page-wrapper">
+
+  <!-- ============================================================
+    3. SEMANTIC PAGE HEADER
+    <header> — introductory content, logo, nav
+    ============================================================ -->
+  <header>
+    <p><span class="badge">Day 01</span><span class="badge">HTML</span><span class="badge">Zero to Advanced</span></p>
+    <h1>Complete HTML — Zero to Advanced</h1>
+    <p>Every HTML concept, element, and attribute — explained with live examples in one file.</p>
+  </header>
+
+  <!-- ============================================================
+    4. NAVIGATION
+    <nav> — primary navigation links
+    ============================================================ -->
+  <nav aria-label="Page sections">
+    <ul class="nav-links">
+      <li><a href="#text">Text</a></li>
+      <li><a href="#links">Links</a></li>
+      <li><a href="#images">Images</a></li>
+      <li><a href="#lists">Lists</a></li>
+      <li><a href="#tables">Tables</a></li>
+      <li><a href="#forms">Forms</a></li>
+      <li><a href="#media">Media</a></li>
+      <li><a href="#semantic">Semantic</a></li>
+      <li><a href="#advanced">Advanced</a></li>
+    </ul>
+  </nav>
+
+  <hr />
+
+  <!-- ============================================================
+    5. MAIN CONTENT AREA
+    <main> — the dominant unique content of the page
+    ============================================================ -->
+  <main>
+
+    <!-- ──────────────────────────────────────────────────────
+      SECTION 1 — HEADINGS
+      h1–h6: Six levels of headings (h1 = most important)
+    ────────────────────────────────────────────────────── -->
+    <section id="headings">
+      <h2>1. Headings (h1 – h6)</h2>
+      <p>Headings define the hierarchy of your content. There should only be <strong>one <code>&lt;h1&gt;</code></strong> per page (usually the page title). Use <code>h2</code>–<code>h6</code> for subsections.</p>
+      <div class="card">
+        <h1>h1 — Page Title (Main Heading)</h1>
+        <h2>h2 — Section Heading</h2>
+        <h3>h3 — Subsection Heading</h3>
+        <h4>h4 — Sub-subsection</h4>
+        <h5>h5 — Minor Heading</h5>
+        <h6>h6 — Smallest Heading</h6>
+      </div>
+    </section>
+
+    <hr />
+
+    <!-- ──────────────────────────────────────────────────────
+      SECTION 2 — TEXT CONTENT & FORMATTING
+    ────────────────────────────────────────────────────── -->
+    <section id="text">
+      <h2>2. Text Content &amp; Formatting</h2>
+
+      <h3>Paragraph &amp; Line Break</h3>
+      <p>This is a <code>&lt;p&gt;</code> paragraph element. It is the most common block-level text container.</p>
+      <p>This is a second paragraph. Use <code>&lt;br /&gt;</code> for a line break<br />inside a paragraph (not for spacing).</p>
+
+      <h3>Inline Text Formatting</h3>
+      <div class="card">
+        <p><strong>strong</strong> — important text (bold, semantic weight)</p>
+        <p><b>b</b> — bold without extra importance (presentational)</p>
+        <p><em>em</em> — emphasized text (italic, semantic)</p>
+        <p><i>i</i> — italic without semantic meaning</p>
+        <p><u>u</u> — underlined text</p>
+        <p><s>s</s> — strikethrough (no longer accurate)</p>
+        <p><del>del</del> — deleted text (semantic removal)</p>
+        <p><ins>ins</ins> — inserted/added text</p>
+        <p><mark>mark</mark> — highlighted text</p>
+        <p><small>small</small> — fine print or legal text</p>
+        <p>H<sub>2</sub>O — <code>sub</code> subscript</p>
+        <p>E = mc<sup>2</sup> — <code>sup</code> superscript</p>
+        <p><code>code</code> — inline code snippet</p>
+        <p><kbd>Ctrl</kbd> + <kbd>C</kbd> — keyboard input with <code>kbd</code></p>
+        <p><samp>Output: 42</samp> — sample program output with <code>samp</code></p>
+        <p><var>x</var> = <var>y</var> + 2 — variable with <code>var</code></p>
+        <p>The <abbr title="HyperText Markup Language">HTML</abbr> standard is maintained by the W3C. <code>abbr</code> with <code>title</code></p>
+        <p><cite>The Great Gatsby</cite> — book/work title with <code>cite</code></p>
+        <p><q>To be or not to be.</q> — inline quotation with <code>q</code></p>
+        <p><dfn>HTML</dfn> is the standard markup language for web pages. — <code>dfn</code> definition</p>
+        <p><time datetime="2026-03-03">March 3, 2026</time> — machine-readable date with <code>time</code></p>
+        <p><address>123 Web Dev Street, Internet City</address> — contact info with <code>address</code></p>
+        <p><bdi>مرحبا</bdi> — bi-directional isolation with <code>bdi</code></p>
+        <p><bdo dir="rtl">Hello World</bdo> — override text direction with <code>bdo dir="rtl"</code></p>
+        <p>word<wbr />break — optional line break opportunity with <code>wbr</code></p>
+        <p><span style="color:#f472b6;">span</span> — generic inline container (no semantic meaning)</p>
+      </div>
+
+      <h3>Preformatted Text</h3>
+      <pre><code>function greet(name) {
+  return `Hello, ${name}!`;
+}
+console.log(greet("World"));</code></pre>
+
+      <h3>Blockquote</h3>
+      <blockquote cite="https://developer.mozilla.org">
+        "The Web is the most powerful tool for communication and collaboration the world has ever seen."
+      </blockquote>
+
+      <h3>Horizontal Rule</h3>
+      <p>Use <code>&lt;hr /&gt;</code> to create a thematic break between content sections.</p>
+
+      <h3>Description List</h3>
+      <dl>
+        <dt>HTML</dt>
+        <dd>HyperText Markup Language — structures web content.</dd>
+        <dt>CSS</dt>
+        <dd>Cascading Style Sheets — styles web content.</dd>
+        <dt>JavaScript</dt>
+        <dd>Scripting language that adds interactivity to web pages.</dd>
+      </dl>
+    </section>
+
+    <hr />
+
+    <!-- ──────────────────────────────────────────────────────
+      SECTION 3 — LINKS & ANCHORS
+    ────────────────────────────────────────────────────── -->
+    <section id="links">
+      <h2>3. Links &amp; Anchors</h2>
+      <div class="card">
+
+        <!-- External link -->
+        <p><a href="https://developer.mozilla.org" target="_blank" rel="noopener noreferrer">MDN Web Docs</a> — <code>target="_blank"</code> opens in new tab. Always add <code>rel="noopener noreferrer"</code> for security.</p>
+
+        <!-- Internal link (same page anchor) -->
+        <p><a href="#forms">Jump to Forms section</a> — internal anchor link using <code>#id</code></p>
+
+        <!-- Email link -->
+        <p><a href="mailto:hello@example.com">Send an Email</a> — <code>mailto:</code> link</p>
+
+        <!-- Phone link -->
+        <p><a href="tel:+1234567890">Call Us</a> — <code>tel:</code> link</p>
+
+        <!-- Download link -->
+        <p><a href="sample.pdf" download="sample-document.pdf">Download PDF</a> — <code>download</code> attribute forces download with custom filename</p>
+
+        <!-- Link with title tooltip -->
+        <p><a href="https://w3.org" title="World Wide Web Consortium">W3C</a> — <code>title</code> attribute shows tooltip on hover</p>
+
+      </div>
+    </section>
+
+    <hr />
+
+    <!-- ──────────────────────────────────────────────────────
+      SECTION 4 — IMAGES
+    ────────────────────────────────────────────────────── -->
+    <section id="images">
+      <h2>4. Images</h2>
+
+      <h3>Basic Image</h3>
+      <div class="card">
+        <!-- alt is mandatory for accessibility and SEO -->
+        <img
+          src="https://via.placeholder.com/600x300/0ea5e9/ffffff?text=HTML+Image+Element"
+          alt="A placeholder image demonstrating the HTML img element"
+          width="600"
+          height="300"
+          loading="lazy"
+          style="max-width:100%; border-radius:8px;"
+        />
+        <p style="font-size:0.85rem; color:#64748b; margin-top:6px;">
+          Key attributes: <code>src</code>, <code>alt</code>, <code>width</code>, <code>height</code>, <code>loading="lazy"</code>
+        </p>
+      </div>
+
+      <h3>Figure &amp; Figcaption (Semantic Image with Caption)</h3>
+      <figure>
+        <img
+          src="https://via.placeholder.com/600x250/7c3aed/ffffff?text=Semantic+Figure+Element"
+          alt="Semantic figure element example"
+          style="max-width:100%; border-radius:8px;"
+          loading="lazy"
+        />
+        <figcaption>Fig. 1 — Use <code>&lt;figure&gt;</code> + <code>&lt;figcaption&gt;</code> to semantically associate an image with its caption.</figcaption>
+      </figure>
+
+      <h3>Responsive Images with &lt;picture&gt;</h3>
+      <div class="card">
+        <!-- picture serves different images based on media/format -->
+        <picture>
+          <source media="(max-width: 480px)" srcset="https://via.placeholder.com/480x200/22c55e/fff?text=Mobile+Image" />
+          <source media="(max-width: 768px)" srcset="https://via.placeholder.com/768x280/0ea5e9/fff?text=Tablet+Image" />
+          <img
+            src="https://via.placeholder.com/900x300/f472b6/fff?text=Desktop+Image"
+            alt="Responsive image using picture element"
+            style="max-width:100%; border-radius:8px;"
+            loading="lazy"
+          />
+        </picture>
+        <p style="font-size:0.85rem; color:#64748b; margin-top:6px;">The <code>&lt;picture&gt;</code> element serves different images at different screen sizes.</p>
+      </div>
+
+      <h3>Image Map</h3>
+      <div class="card">
+        <img
+          src="https://via.placeholder.com/500x150/1e293b/7dd3fc?text=Image+Map+%28click+areas%29"
+          alt="Image map demo"
+          usemap="#demo-map"
+          style="max-width:100%; border-radius:6px;"
+        />
+        <map name="demo-map">
+          <area shape="rect" coords="0,0,166,150"   href="#links"  alt="Links Section"  title="Go to Links" />
+          <area shape="rect" coords="167,0,333,150" href="#forms"  alt="Forms Section"  title="Go to Forms" />
+          <area shape="rect" coords="334,0,500,150" href="#tables" alt="Tables Section" title="Go to Tables" />
+        </map>
+        <p style="font-size:0.85rem; color:#64748b; margin-top:8px;"><code>&lt;map&gt;</code> + <code>&lt;area&gt;</code> create clickable regions on an image.</p>
+      </div>
+    </section>
+
+    <hr />
+
+    <!-- ──────────────────────────────────────────────────────
+      SECTION 5 — LISTS
+    ────────────────────────────────────────────────────── -->
+    <section id="lists">
+      <h2>5. Lists</h2>
+
+      <h3>Unordered List <code>&lt;ul&gt;</code></h3>
+      <ul>
+        <li>HTML — Structure</li>
+        <li>CSS — Style</li>
+        <li>JavaScript — Behaviour</li>
+      </ul>
+
+      <h3>Ordered List <code>&lt;ol&gt;</code></h3>
+      <ol>
+        <li>Plan the layout</li>
+        <li>Write the HTML structure</li>
+        <li>Add CSS styling</li>
+        <li>Implement JavaScript logic</li>
+        <li>Test and deploy</li>
+      </ol>
+
+      <h3>Ordered List — Custom Start &amp; Reversed</h3>
+      <ol start="5" reversed type="1">
+        <li>Item five</li>
+        <li>Item four</li>
+        <li>Item three</li>
+      </ol>
+
+      <h3>Ordered List — Letter &amp; Roman Types</h3>
+      <ol type="A">
+        <li>Alpha</li>
+        <li>Beta</li>
+        <li>Gamma</li>
+      </ol>
+      <ol type="I">
+        <li>Primary</li>
+        <li>Secondary</li>
+        <li>Tertiary</li>
+      </ol>
+
+      <h3>Nested Lists</h3>
+      <ul>
+        <li>Front-End
+          <ul>
+            <li>HTML</li>
+            <li>CSS
+              <ul>
+                <li>Flexbox</li>
+                <li>Grid</li>
+              </ul>
+            </li>
+            <li>JavaScript</li>
+          </ul>
+        </li>
+        <li>Back-End
+          <ul>
+            <li>Node.js</li>
+            <li>Python</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h3>Description List <code>&lt;dl&gt;</code></h3>
+      <dl>
+        <dt>API</dt><dd>Application Programming Interface</dd>
+        <dt>DOM</dt><dd>Document Object Model</dd>
+        <dt>JSON</dt><dd>JavaScript Object Notation</dd>
+      </dl>
+    </section>
+
+    <hr />
+
+    <!-- ──────────────────────────────────────────────────────
+      SECTION 6 — TABLES
+    ────────────────────────────────────────────────────── -->
+    <section id="tables">
+      <h2>6. Tables</h2>
+      <p>Use tables for <strong>tabular data only</strong> — never for layout.</p>
+
+      <h3>Basic Table</h3>
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Tag</th>
+            <th scope="col">Name</th>
+            <th scope="col">Purpose</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td><code>&lt;table&gt;</code></td><td>Table</td><td>Container for the entire table</td></tr>
+          <tr><td><code>&lt;thead&gt;</code></td><td>Table Head</td><td>Header row group</td></tr>
+          <tr><td><code>&lt;tbody&gt;</code></td><td>Table Body</td><td>Main data row group</td></tr>
+          <tr><td><code>&lt;tfoot&gt;</code></td><td>Table Foot</td><td>Footer row group (totals)</td></tr>
+          <tr><td><code>&lt;tr&gt;</code></td><td>Table Row</td><td>A single row in the table</td></tr>
+          <tr><td><code>&lt;th&gt;</code></td><td>Table Header Cell</td><td>Header cell (bold, centered)</td></tr>
+          <tr><td><code>&lt;td&gt;</code></td><td>Table Data Cell</td><td>Standard data cell</td></tr>
+          <tr><td><code>&lt;caption&gt;</code></td><td>Caption</td><td>Table title/description</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Table with colspan, rowspan &amp; caption</h3>
+      <table>
+        <caption style="caption-side:top; color:#7dd3fc; font-weight:600; padding:8px;">
+          Course Progress — AI Web Dev
+        </caption>
+        <colgroup>
+          <col style="background:#1e293b;" />
+          <col />
+          <col />
+        </colgroup>
+        <thead>
+          <tr>
+            <th scope="col">Week</th>
+            <th scope="col">Topics</th>
+            <th scope="col">Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="2">Week 1</td>
+            <td>HTML Fundamentals</td>
+            <td style="color:#22c55e;">✅ Done</td>
+          </tr>
+          <tr>
+            <td>Advanced HTML</td>
+            <td style="color:#0ea5e9;">🔄 In Progress</td>
+          </tr>
+          <tr>
+            <td>Week 2</td>
+            <td colspan="2" style="text-align:center;">CSS &amp; Layouts — Upcoming</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="3" style="text-align:right; color:#64748b;">Last updated: March 2026</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+
+    <hr />
+
+    <!-- ──────────────────────────────────────────────────────
+      SECTION 7 — FORMS
+    ────────────────────────────────────────────────────── -->
+    <section id="forms">
+      <h2>7. Forms &amp; All Input Types</h2>
+      <p>Forms collect user input. Always use <code>label</code> for accessibility.</p>
+
+      <form action="#" method="post" enctype="multipart/form-data" novalidate>
+
+        <!-- ── Fieldset: Text Inputs ─────────────────────── -->
+        <fieldset>
+          <legend>Text &amp; Basic Inputs</legend>
+
+          <label for="name">Text input</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required autocomplete="name" />
+
+          <label for="email">Email input</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required />
+
+          <label for="password">Password input</label>
+          <input type="password" id="password" name="password" placeholder="Min. 8 characters" minlength="8" />
+
+          <label for="phone">Phone input</label>
+          <input type="tel" id="phone" name="phone" placeholder="+1 234 567 8900" pattern="[+][0-9\s]{7,15}" />
+
+          <label for="url">URL input</label>
+          <input type="url" id="url" name="url" placeholder="https://example.com" />
+
+          <label for="search">Search input</label>
+          <input type="search" id="search" name="search" placeholder="Search..." />
+
+          <label for="message">Textarea (multi-line)</label>
+          <textarea id="message" name="message" rows="4" cols="50" placeholder="Write your message..." maxlength="500"></textarea>
+        </fieldset>
+
+        <!-- ── Fieldset: Number & Range ──────────────────── -->
+        <fieldset>
+          <legend>Number, Range &amp; Date Inputs</legend>
+
+          <label for="age">Number input</label>
+          <input type="number" id="age" name="age" min="1" max="120" step="1" placeholder="Your age" />
+
+          <label for="volume">Range slider (0–100)</label>
+          <input type="range" id="volume" name="volume" min="0" max="100" step="5" value="50" />
+
+          <label for="bday">Date input</label>
+          <input type="date" id="bday" name="bday" />
+
+          <label for="appt-time">Time input</label>
+          <input type="time" id="appt-time" name="appt-time" />
+
+          <label for="meeting">Datetime-local input</label>
+          <input type="datetime-local" id="meeting" name="meeting" />
+
+          <label for="birth-month">Month input</label>
+          <input type="month" id="birth-month" name="birth-month" />
+
+          <label for="work-week">Week input</label>
+          <input type="week" id="work-week" name="work-week" />
+        </fieldset>
+
+        <!-- ── Fieldset: Select & Datalist ───────────────── -->
+        <fieldset>
+          <legend>Select, Datalist &amp; Option Groups</legend>
+
+          <label for="skill">Select dropdown</label>
+          <select id="skill" name="skill">
+            <optgroup label="Front-End">
+              <option value="">-- Choose a skill --</option>
+              <option value="html">HTML</option>
+              <option value="css">CSS</option>
+              <option value="js">JavaScript</option>
+            </optgroup>
+            <optgroup label="Back-End">
+              <option value="node">Node.js</option>
+              <option value="python">Python</option>
+            </optgroup>
+          </select>
+
+          <label for="multi-select">Multi-select (hold Ctrl/Cmd)</label>
+          <select id="multi-select" name="tools" multiple size="4" style="height:auto;">
+            <option value="copilot">GitHub Copilot</option>
+            <option value="chatgpt">ChatGPT</option>
+            <option value="gemini">Gemini</option>
+            <option value="figma">Figma AI</option>
+          </select>
+
+          <label for="browser">Datalist (type-ahead suggestions)</label>
+          <input list="browsers" id="browser" name="browser" placeholder="Start typing..." />
+          <datalist id="browsers">
+            <option value="Chrome" />
+            <option value="Firefox" />
+            <option value="Safari" />
+            <option value="Edge" />
+            <option value="Brave" />
+          </datalist>
+        </fieldset>
+
+        <!-- ── Fieldset: Checkbox & Radio ────────────────── -->
+        <fieldset>
+          <legend>Checkbox &amp; Radio Buttons</legend>
+
+          <p><strong>Checkboxes</strong> (multiple selections allowed)</p>
+          <label><input type="checkbox" name="tech" value="html" checked /> HTML</label>
+          <label><input type="checkbox" name="tech" value="css" /> CSS</label>
+          <label><input type="checkbox" name="tech" value="js" /> JavaScript</label>
+          <label><input type="checkbox" name="terms" value="agree" required /> I agree to the <a href="#">Terms &amp; Conditions</a></label>
+
+          <p style="margin-top:12px;"><strong>Radio buttons</strong> (single selection only)</p>
+          <label><input type="radio" name="level" value="beginner" checked /> Beginner</label>
+          <label><input type="radio" name="level" value="intermediate" /> Intermediate</label>
+          <label><input type="radio" name="level" value="advanced" /> Advanced</label>
+        </fieldset>
+
+        <!-- ── Fieldset: File, Color, Hidden ─────────────── -->
+        <fieldset>
+          <legend>File, Color &amp; Special Inputs</legend>
+
+          <label for="avatar">File upload</label>
+          <input type="file" id="avatar" name="avatar" accept="image/*" />
+
+          <label for="multi-file">Multiple files upload</label>
+          <input type="file" id="multi-file" name="docs" multiple accept=".pdf,.doc,.docx" />
+
+          <label for="fav-color">Color picker</label>
+          <input type="color" id="fav-color" name="fav-color" value="#0ea5e9" />
+
+          <!-- Hidden input — not visible to user, sends data silently -->
+          <input type="hidden" name="csrf_token" value="abc123xyz" />
+          <p style="font-size:0.82rem; color:#64748b;">Hidden input stores data not visible to user (e.g. CSRF tokens).</p>
+        </fieldset>
+
+        <!-- ── Fieldset: Progress & Meter ────────────────── -->
+        <fieldset>
+          <legend>Progress &amp; Meter</legend>
+
+          <label>Course completion:</label>
+          <progress value="65" max="100">65%</progress>
+          <p style="font-size:0.82rem; color:#64748b;"><code>&lt;progress&gt;</code> — shows task completion.</p>
+
+          <label>Disk usage (low is good):</label>
+          <meter value="72" min="0" max="100" low="30" high="70" optimum="10">72%</meter>
+          <p style="font-size:0.82rem; color:#64748b;"><code>&lt;meter&gt;</code> — shows a scalar measurement within a known range.</p>
+
+          <label for="calc" style="margin-top:12px;">Output element:</label>
+          <form oninput="calcResult.value = parseInt(num1.value) + parseInt(num2.value)">
+            <input type="number" id="num1" name="num1" value="5" style="width:80px; display:inline;" />
+            +
+            <input type="number" name="num2" value="10" style="width:80px; display:inline;" />
+            =
+            <output name="calcResult" for="num1 num2" style="color:#22c55e; font-weight:700;">15</output>
+          </form>
+          <p style="font-size:0.82rem; color:#64748b; margin-top:4px;"><code>&lt;output&gt;</code> — displays the result of a calculation.</p>
+        </fieldset>
+
+        <!-- ── Form Buttons ───────────────────────────────── -->
+        <fieldset>
+          <legend>Buttons</legend>
+          <button type="submit">Submit Form</button>
+          <button type="reset">Reset</button>
+          <button type="button" onclick="alert('Button clicked!')">Button (JS action)</button>
+          <input type="submit" value="Input Submit" />
+          <input type="image" src="https://via.placeholder.com/80x32/0ea5e9/fff?text=Submit" alt="Submit" />
+          <p style="font-size:0.82rem; color:#64748b; margin-top:8px;"><code>type="button"</code> does nothing by default — used with JavaScript.</p>
+        </fieldset>
+
+      </form>
+    </section>
+
+    <hr />
+
+    <!-- ──────────────────────────────────────────────────────
+      SECTION 8 — MULTIMEDIA (Audio & Video)
+    ────────────────────────────────────────────────────── -->
+    <section id="media">
+      <h2>8. Multimedia — Audio &amp; Video</h2>
+
+      <h3>Video Element</h3>
+      <div class="card">
+        <video
+          width="100%"
+          height="auto"
+          controls
+          autoplay
+          muted
+          loop
+          poster="https://via.placeholder.com/800x400/0f172a/7dd3fc?text=Video+Poster+Image"
+          style="border-radius:8px;"
+        >
+          <!-- Multiple sources for browser compatibility -->
+          <source src="video.mp4" type="video/mp4" />
+          <source src="video.webm" type="video/webm" />
+          <!-- Subtitles / Captions -->
+          <track kind="subtitles" src="subtitles-en.vtt" srclang="en" label="English" default />
+          <track kind="captions"  src="captions-en.vtt"  srclang="en" label="English Captions" />
+          <!-- Fallback for browsers that don't support video -->
+          <p>Your browser doesn't support HTML video. <a href="video.mp4">Download the video</a>.</p>
+        </video>
+        <p style="font-size:0.82rem; color:#64748b; margin-top:8px;">
+          Key attributes: <code>controls</code>, <code>autoplay</code>, <code>muted</code>, <code>loop</code>, <code>poster</code>, <code>preload</code>
+        </p>
+      </div>
+
+      <h3>Audio Element</h3>
+      <div class="card">
+        <audio controls preload="metadata" style="width:100%;">
+          <source src="audio.mp3" type="audio/mpeg" />
+          <source src="audio.ogg" type="audio/ogg" />
+          <source src="audio.wav" type="audio/wav" />
+          <p>Your browser doesn't support HTML audio. <a href="audio.mp3">Download the audio</a>.</p>
+        </audio>
+        <p style="font-size:0.82rem; color:#64748b; margin-top:8px;">
+          Key attributes: <code>controls</code>, <code>autoplay</code>, <code>loop</code>, <code>muted</code>, <code>preload</code>
+        </p>
+      </div>
+
+      <h3>Embed External Content — iFrame</h3>
+      <div class="card">
+        <iframe
+          src="https://www.wikipedia.org/"
+          title="Wikipedia — embedded via iframe"
+          width="100%"
+          height="300"
+          loading="lazy"
+          sandbox="allow-scripts allow-same-origin"
+          style="border:1px solid #334155; border-radius:8px;"
+        ></iframe>
+        <p style="font-size:0.82rem; color:#64748b; margin-top:8px;">
+          <code>sandbox</code> restricts iframe permissions. <code>loading="lazy"</code> defers load until visible.
+        </p>
+      </div>
+
+      <h3>Embed &amp; Object</h3>
+      <div class="card">
+        <!-- embed — external resource (PDF, flash, etc.) -->
+        <embed src="sample.pdf" type="application/pdf" width="100%" height="200" style="border-radius:6px;" />
+
+        <!-- object — versatile embedding with fallback -->
+        <object data="sample.pdf" type="application/pdf" width="100%" height="200" style="margin-top:12px; border-radius:6px;">
+          <p>PDF not supported. <a href="sample.pdf">Download PDF</a>.</p>
+        </object>
+      </div>
+    </section>
+
+    <hr />
+
+    <!-- ──────────────────────────────────────────────────────
+      SECTION 9 — SEMANTIC HTML5 ELEMENTS
+    ────────────────────────────────────────────────────── -->
+    <section id="semantic">
+      <h2>9. Semantic HTML5 Elements</h2>
+      <p>Semantic elements clearly describe their meaning to both the browser and the developer. They improve <strong>SEO</strong>, <strong>accessibility</strong>, and <strong>maintainability</strong>.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Element</th>
+            <th>Meaning / Use Case</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td><code>&lt;header&gt;</code></td><td>Introductory content, site/page header, logo, nav</td></tr>
+          <tr><td><code>&lt;nav&gt;</code></td><td>Navigation links (primary, secondary, breadcrumbs)</td></tr>
+          <tr><td><code>&lt;main&gt;</code></td><td>Dominant unique content of the page (only ONE per page)</td></tr>
+          <tr><td><code>&lt;section&gt;</code></td><td>Thematic grouping of content with a heading</td></tr>
+          <tr><td><code>&lt;article&gt;</code></td><td>Self-contained content (blog post, news article, comment)</td></tr>
+          <tr><td><code>&lt;aside&gt;</code></td><td>Secondary/related content (sidebar, pull quotes, ads)</td></tr>
+          <tr><td><code>&lt;footer&gt;</code></td><td>Footer for a section or page (copyright, links)</td></tr>
+          <tr><td><code>&lt;figure&gt;</code></td><td>Self-contained media (image, chart) with optional caption</td></tr>
+          <tr><td><code>&lt;figcaption&gt;</code></td><td>Caption for a <code>&lt;figure&gt;</code></td></tr>
+          <tr><td><code>&lt;details&gt;</code></td><td>Disclosure widget (expandable/collapsible)</td></tr>
+          <tr><td><code>&lt;summary&gt;</code></td><td>Visible heading of a <code>&lt;details&gt;</code> element</td></tr>
+          <tr><td><code>&lt;dialog&gt;</code></td><td>Modal or non-modal dialog box</td></tr>
+          <tr><td><code>&lt;mark&gt;</code></td><td>Highlighted/relevant text</td></tr>
+          <tr><td><code>&lt;time&gt;</code></td><td>Machine-readable date/time</td></tr>
+          <tr><td><code>&lt;address&gt;</code></td><td>Contact information for nearest article/body ancestor</td></tr>
+          <tr><td><code>&lt;progress&gt;</code></td><td>Progress of a task</td></tr>
+          <tr><td><code>&lt;meter&gt;</code></td><td>Scalar value in a known range</td></tr>
+          <tr><td><code>&lt;output&gt;</code></td><td>Result of a calculation or user action</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Semantic Page Layout Structure</h3>
+      <div class="card">
+        <pre><code>&lt;body&gt;
+  &lt;header&gt;
+    &lt;nav&gt; ... &lt;/nav&gt;
+  &lt;/header&gt;
+
+  &lt;main&gt;
+    &lt;section&gt;
+      &lt;article&gt; ... &lt;/article&gt;
+      &lt;article&gt; ... &lt;/article&gt;
+    &lt;/section&gt;
+    &lt;aside&gt; ... &lt;/aside&gt;
+  &lt;/main&gt;
+
+  &lt;footer&gt; ... &lt;/footer&gt;
+&lt;/body&gt;</code></pre>
+      </div>
+
+      <!-- Article example -->
+      <article class="card">
+        <header>
+          <h3>Article: What is Semantic HTML?</h3>
+          <p><time datetime="2026-03-03">March 3, 2026</time> &mdash; by <address><a href="mailto:pulok@example.com">Pulok</a></address></p>
+        </header>
+        <p>Semantic HTML uses elements that carry meaning about the structure and content of a document. Instead of using <code>&lt;div&gt;</code> for everything, you use elements like <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code>, and <code>&lt;nav&gt;</code>.</p>
+        <footer>
+          <p style="font-size:0.82rem; color:#64748b;">Tags: <a href="#">HTML</a>, <a href="#">Semantics</a>, <a href="#">Accessibility</a></p>
+        </footer>
+      </article>
+
+      <!-- Aside example -->
+      <aside class="card" style="border-left:4px solid #0ea5e9;">
+        <h3>💡 Aside: Did you know?</h3>
+        <p>Screen readers use semantic HTML to navigate pages efficiently. Using correct elements can dramatically improve the experience for users with disabilities.</p>
+      </aside>
+    </section>
+
+    <hr />
+
+    <!-- ──────────────────────────────────────────────────────
+      SECTION 10 — ADVANCED HTML
+    ────────────────────────────────────────────────────── -->
+    <section id="advanced">
+      <h2>10. Advanced HTML</h2>
+
+      <!-- Details / Summary -->
+      <h3>Details &amp; Summary (Accordion)</h3>
+      <details>
+        <summary>What is the DOM?</summary>
+        <p style="margin-top:10px; color:#94a3b8;">The <strong>Document Object Model (DOM)</strong> is a programming interface for HTML. It represents the page as a tree of objects that JavaScript can manipulate to change structure, style, and content dynamically.</p>
+      </details>
+      <details>
+        <summary>What is a CSS Box Model?</summary>
+        <p style="margin-top:10px; color:#94a3b8;">Every HTML element is a rectangular box with: <strong>content</strong>, <strong>padding</strong>, <strong>border</strong>, and <strong>margin</strong>. Understanding the box model is fundamental to CSS layout.</p>
+      </details>
+      <details>
+        <summary>What is Semantic HTML?</summary>
+        <p style="margin-top:10px; color:#94a3b8;">Semantic HTML uses elements with meaningful names that describe the role of their content — improving SEO, accessibility, and code readability.</p>
+      </details>
+
+      <!-- Dialog -->
+      <h3>&lt;dialog&gt; Element (Native Modal)</h3>
+      <div class="card">
+        <button type="button" onclick="document.getElementById('myDialog').showModal()">Open Dialog Modal</button>
+        <dialog id="myDialog">
+          <h3 style="color:#38bdf8; margin-bottom:12px;">🤖 AI-Powered Web Dev</h3>
+          <p>This is a native HTML <code>&lt;dialog&gt;</code> element. No JavaScript library needed!</p>
+          <p style="margin-top:12px;">It supports <code>.show()</code> (non-modal) and <code>.showModal()</code> (modal with backdrop).</p>
+          <form method="dialog" style="margin-top:16px;">
+            <button>Close Dialog</button>
+          </form>
+        </dialog>
+      </div>
+
+      <!-- HTML Entities -->
+      <h3>HTML Entities &amp; Special Characters</h3>
+      <div class="card">
+        <table>
+          <thead><tr><th>Entity</th><th>Code</th><th>Description</th></tr></thead>
+          <tbody>
+            <tr><td>&amp;</td><td><code>&amp;amp;</code></td><td>Ampersand</td></tr>
+            <tr><td>&lt;</td><td><code>&amp;lt;</code></td><td>Less-than sign</td></tr>
+            <tr><td>&gt;</td><td><code>&amp;gt;</code></td><td>Greater-than sign</td></tr>
+            <tr><td>&quot;</td><td><code>&amp;quot;</code></td><td>Double quote</td></tr>
+            <tr><td>&apos;</td><td><code>&amp;apos;</code></td><td>Apostrophe</td></tr>
+            <tr><td>&copy;</td><td><code>&amp;copy;</code></td><td>Copyright</td></tr>
+            <tr><td>&reg;</td><td><code>&amp;reg;</code></td><td>Registered trademark</td></tr>
+            <tr><td>&trade;</td><td><code>&amp;trade;</code></td><td>Trademark</td></tr>
+            <tr><td>&mdash;</td><td><code>&amp;mdash;</code></td><td>Em dash</td></tr>
+            <tr><td>&ndash;</td><td><code>&amp;ndash;</code></td><td>En dash</td></tr>
+            <tr><td>&nbsp;</td><td><code>&amp;nbsp;</code></td><td>Non-breaking space</td></tr>
+            <tr><td>&hearts;</td><td><code>&amp;hearts;</code></td><td>Heart</td></tr>
+            <tr><td>&euro;</td><td><code>&amp;euro;</code></td><td>Euro sign</td></tr>
+            <tr><td>&pound;</td><td><code>&amp;pound;</code></td><td>Pound sign</td></tr>
+            <tr><td>&yen;</td><td><code>&amp;yen;</code></td><td>Yen sign</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Canvas -->
+      <h3>Canvas Element (2D Drawing)</h3>
+      <div class="card">
+        <canvas id="myCanvas" width="500" height="180" aria-label="Canvas drawing demo" role="img"></canvas>
+        <p style="font-size:0.82rem; color:#64748b; margin-top:8px;"><code>&lt;canvas&gt;</code> provides a drawable region via the JavaScript Canvas 2D API. Used for charts, games, animations, and data visualization.</p>
+      </div>
+
+      <!-- SVG -->
+      <h3>Inline SVG (Scalable Vector Graphics)</h3>
+      <div class="card">
+        <svg width="100%" height="120" viewBox="0 0 500 120" xmlns="http://www.w3.org/2000/svg" aria-label="SVG demo shapes" role="img">
+          <defs>
+            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%"   style="stop-color:#0ea5e9; stop-opacity:1" />
+              <stop offset="100%" style="stop-color:#7c3aed; stop-opacity:1" />
+            </linearGradient>
+          </defs>
+          <!-- Rectangle -->
+          <rect x="10" y="20" width="120" height="80" rx="10" ry="10" fill="url(#grad1)" />
+          <!-- Circle -->
+          <circle cx="210" cy="60" r="48" fill="#f472b6" opacity="0.85" />
+          <!-- Ellipse -->
+          <ellipse cx="330" cy="60" rx="60" ry="36" fill="#22c55e" opacity="0.8" />
+          <!-- Polygon -->
+          <polygon points="430,18 480,100 380,100" fill="#fbbf24" opacity="0.9" />
+          <!-- Line -->
+          <line x1="10" y1="115" x2="490" y2="115" stroke="#334155" stroke-width="1.5" />
+          <!-- Text -->
+          <text x="10" y="14" font-size="12" fill="#94a3b8">rect</text>
+          <text x="188" y="14" font-size="12" fill="#94a3b8">circle</text>
+          <text x="300" y="14" font-size="12" fill="#94a3b8">ellipse</text>
+          <text x="413" y="14" font-size="12" fill="#94a3b8">polygon</text>
+        </svg>
+        <p style="font-size:0.82rem; color:#64748b; margin-top:8px;">Inline SVG renders crisp at any size. Supports shapes, gradients, text, animation (<code>animate</code>), and interactivity via CSS &amp; JS.</p>
+      </div>
+
+      <!-- Data Attributes -->
+      <h3>Data Attributes (<code>data-*</code>)</h3>
+      <div class="card">
+        <p>Custom data can be stored directly on HTML elements using <code>data-*</code> attributes, then accessed via JavaScript (<code>element.dataset.name</code>).</p>
+        <div
+          id="product-card"
+          data-product-id="PRD-2026-001"
+          data-product-name="AI Web Dev Course"
+          data-price="99.99"
+          data-category="education"
+          style="background:#0f172a; border:1px solid #334155; padding:14px; border-radius:8px; margin-top:8px;"
+        >
+          <strong style="color:#7dd3fc;">AI Web Dev Course</strong>
+          <p style="font-size:0.85rem;">$99.99 &mdash; data attributes store the product ID, name, price, and category.</p>
+          <button type="button" onclick="
+            const el = document.getElementById('product-card');
+            alert('ID: ' + el.dataset.productId + '\nName: ' + el.dataset.productName + '\nPrice: $' + el.dataset.price);
+          ">Read Data Attributes via JS</button>
+        </div>
+      </div>
+
+      <!-- Template Element -->
+      <h3>&lt;template&gt; Element (Reusable Markup)</h3>
+      <div class="card">
+        <template id="card-template">
+          <div class="card" style="background:#0f172a; border:1px solid #0ea5e9;">
+            <strong class="card-title" style="color:#38bdf8;"></strong>
+            <p class="card-body" style="font-size:0.88rem; margin-top:6px;"></p>
+          </div>
+        </template>
+        <div id="template-output"></div>
+        <button type="button" onclick="
+          const tmpl = document.getElementById('card-template');
+          const clone = tmpl.content.cloneNode(true);
+          clone.querySelector('.card-title').textContent = '🤖 Generated from Template!';
+          clone.querySelector('.card-body').textContent = 'This card was stamped out from an HTML template element — reusable, performant, and no framework needed.';
+          document.getElementById('template-output').appendChild(clone);
+        ">Stamp Out Template</button>
+        <p style="font-size:0.82rem; color:#64748b; margin-top:8px;"><code>&lt;template&gt;</code> holds inert HTML that isn't rendered until cloned via JavaScript.</p>
+      </div>
+
+      <!-- Accessibility (ARIA) -->
+      <h3>Accessibility &amp; ARIA</h3>
+      <div class="card">
+        <p>ARIA (Accessible Rich Internet Applications) adds accessibility metadata to elements for screen readers.</p>
+        <ul>
+          <li><code>role</code> — defines what the element is (e.g., <code>role="dialog"</code>, <code>role="alert"</code>, <code>role="navigation"</code>)</li>
+          <li><code>aria-label</code> — provides an accessible name for an element</li>
+          <li><code>aria-labelledby</code> — points to another element that labels this one</li>
+          <li><code>aria-describedby</code> — points to a description element</li>
+          <li><code>aria-hidden="true"</code> — hides element from screen readers (decorative icons)</li>
+          <li><code>aria-live="polite"</code> — announces dynamic content changes</li>
+          <li><code>aria-expanded="false"</code> — indicates collapsed/expanded state</li>
+          <li><code>aria-required="true"</code> — marks field as required</li>
+          <li><code>aria-invalid="true"</code> — marks field as having an error</li>
+          <li><code>tabindex="0"</code> — makes non-focusable elements keyboard-focusable</li>
+          <li><code>tabindex="-1"</code> — removes element from tab order but allows focus via JS</li>
+        </ul>
+
+        <!-- ARIA example -->
+        <button
+          type="button"
+          id="toggle-btn"
+          aria-expanded="false"
+          aria-controls="aria-panel"
+          onclick="
+            const btn = this;
+            const panel = document.getElementById('aria-panel');
+            const expanded = btn.getAttribute('aria-expanded') === 'true';
+            btn.setAttribute('aria-expanded', !expanded);
+            panel.hidden = expanded;
+          "
+        >Toggle ARIA Panel</button>
+        <div id="aria-panel" role="region" aria-labelledby="toggle-btn" hidden style="background:#0f172a; border:1px solid #334155; border-radius:6px; padding:14px; margin-top:10px;">
+          <p>This panel is controlled by the button above. Its visibility is toggled via <code>hidden</code> and its state communicated via <code>aria-expanded</code>.</p>
+        </div>
+      </div>
+
+      <!-- Script loading strategies -->
+      <h3>Script Loading Strategies</h3>
+      <div class="card">
+        <table>
+          <thead><tr><th>Method</th><th>Behavior</th><th>Use When</th></tr></thead>
+          <tbody>
+            <tr><td><code>&lt;script&gt;</code></td><td>Blocks HTML parsing; executes immediately</td><td>Legacy / avoid</td></tr>
+            <tr><td><code>defer</code></td><td>Downloads in parallel; executes after HTML is parsed</td><td>Most scripts ✅</td></tr>
+            <tr><td><code>async</code></td><td>Downloads in parallel; executes immediately when ready (order not guaranteed)</td><td>Independent scripts (analytics)</td></tr>
+            <tr><td><code>type="module"</code></td><td>ES module; deferred by default; strict mode</td><td>Modern JS modules ✅</td></tr>
+          </tbody>
+        </table>
+        <pre><code>&lt;!-- At end of &lt;body&gt; or use defer/async --&gt;
+&lt;script src="app.js" defer&gt;&lt;/script&gt;
+&lt;script src="analytics.js" async&gt;&lt;/script&gt;
+&lt;script src="module.js" type="module"&gt;&lt;/script&gt;
+&lt;script&gt;
+  // Inline script — runs immediately when parser reaches it
+  console.log('Hello from inline script!');
+&lt;/script&gt;</code></pre>
+      </div>
+
+      <!-- Global Attributes -->
+      <h3>Global HTML Attributes</h3>
+      <div class="card">
+        <table>
+          <thead><tr><th>Attribute</th><th>Description</th></tr></thead>
+          <tbody>
+            <tr><td><code>id</code></td><td>Unique identifier for an element on the page</td></tr>
+            <tr><td><code>class</code></td><td>One or more CSS class names (space-separated)</td></tr>
+            <tr><td><code>style</code></td><td>Inline CSS styles</td></tr>
+            <tr><td><code>title</code></td><td>Advisory tooltip text shown on hover</td></tr>
+            <tr><td><code>lang</code></td><td>Language of the element's content</td></tr>
+            <tr><td><code>dir</code></td><td>Text direction: <code>ltr</code>, <code>rtl</code>, or <code>auto</code></td></tr>
+            <tr><td><code>hidden</code></td><td>Hides element (same as <code>display:none</code>)</td></tr>
+            <tr><td><code>tabindex</code></td><td>Controls keyboard tab order</td></tr>
+            <tr><td><code>contenteditable</code></td><td>Makes element editable by the user</td></tr>
+            <tr><td><code>draggable</code></td><td>Whether element can be dragged</td></tr>
+            <tr><td><code>spellcheck</code></td><td>Enable/disable browser spell checking</td></tr>
+            <tr><td><code>translate</code></td><td>Whether browser should translate content</td></tr>
+            <tr><td><code>data-*</code></td><td>Custom data attributes</td></tr>
+            <tr><td><code>aria-*</code></td><td>Accessibility attributes</td></tr>
+          </tbody>
+        </table>
+
+        <!-- contenteditable demo -->
+        <div
+          contenteditable="true"
+          spellcheck="true"
+          style="background:#0f172a; border:1px solid #0ea5e9; border-radius:6px; padding:12px; min-height:60px; margin-top:10px; outline:none;"
+          aria-label="Editable area"
+        >
+          ✏️ This text is <strong>editable</strong>! Click here and type anything — powered by <code>contenteditable="true"</code>.
+        </div>
+      </div>
+
+      <!-- Meta Refresh & Redirect -->
+      <h3>Meta Refresh / Redirect</h3>
+      <div class="card">
+        <pre><code>&lt;!-- Redirect after 5 seconds --&gt;
+&lt;meta http-equiv="refresh" content="5; url=https://example.com" /&gt;
+
+&lt;!-- Refresh page every 30 seconds --&gt;
+&lt;meta http-equiv="refresh" content="30" /&gt;
+
+&lt;!-- Set Content Security Policy --&gt;
+&lt;meta http-equiv="Content-Security-Policy" content="default-src 'self'" /&gt;
+
+&lt;!-- Prevent caching --&gt;
+&lt;meta http-equiv="Cache-Control" content="no-cache" /&gt;</code></pre>
+      </div>
+
+      <!-- Link element uses -->
+      <h3>Link Element Uses</h3>
+      <div class="card">
+        <pre><code>&lt;!-- Stylesheet --&gt;
+&lt;link rel="stylesheet" href="styles.css" /&gt;
+
+&lt;!-- Favicon --&gt;
+&lt;link rel="icon" type="image/png" href="favicon.png" /&gt;
+&lt;link rel="apple-touch-icon" href="apple-icon-180.png" /&gt;
+
+&lt;!-- Web App Manifest (PWA) --&gt;
+&lt;link rel="manifest" href="/manifest.json" /&gt;
+
+&lt;!-- Preload critical resource --&gt;
+&lt;link rel="preload" href="font.woff2" as="font" type="font/woff2" crossorigin /&gt;
+&lt;link rel="preload" href="hero.jpg" as="image" /&gt;
+
+&lt;!-- Prefetch next page --&gt;
+&lt;link rel="prefetch" href="/next-page.html" /&gt;
+
+&lt;!-- DNS Prefetch --&gt;
+&lt;link rel="dns-prefetch" href="//api.example.com" /&gt;
+
+&lt;!-- RSS Feed --&gt;
+&lt;link rel="alternate" type="application/rss+xml" href="/feed.rss" /&gt;
+
+&lt;!-- Canonical URL --&gt;
+&lt;link rel="canonical" href="https://example.com/page" /&gt;</code></pre>
+      </div>
+
+      <!-- Deprecated Elements -->
+      <h3>⚠️ Deprecated / Obsolete Elements (Avoid!)</h3>
+      <div class="card">
+        <table>
+          <thead><tr><th>Deprecated Tag</th><th>Use Instead</th></tr></thead>
+          <tbody>
+            <tr><td><code>&lt;center&gt;</code></td><td>CSS: <code>text-align: center</code></td></tr>
+            <tr><td><code>&lt;font&gt;</code></td><td>CSS: <code>font-family</code>, <code>font-size</code>, <code>color</code></td></tr>
+            <tr><td><code>&lt;marquee&gt;</code></td><td>CSS animations or JavaScript</td></tr>
+            <tr><td><code>&lt;frame&gt;</code> / <code>&lt;frameset&gt;</code></td><td><code>&lt;iframe&gt;</code></td></tr>
+            <tr><td><code>&lt;blink&gt;</code></td><td>CSS <code>animation</code></td></tr>
+            <tr><td><code>&lt;big&gt;</code></td><td>CSS <code>font-size</code></td></tr>
+            <tr><td><code>&lt;strike&gt;</code></td><td><code>&lt;del&gt;</code> or <code>&lt;s&gt;</code></td></tr>
+            <tr><td><code>align=</code> attribute</td><td>CSS <code>text-align</code> / flexbox</td></tr>
+            <tr><td><code>bgcolor=</code> attribute</td><td>CSS <code>background-color</code></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+    </section>
+
+  </main><!-- /main -->
+
+  <hr />
+
+  <!-- ============================================================
+    11. ASIDE — SIDEBAR (Related Content)
+    ============================================================ -->
+  <aside aria-label="Quick reference cheatsheet">
+    <h2>Quick Reference Cheatsheet</h2>
+    <div class="card">
+      <h3>Block-Level Elements</h3>
+      <p>Always start on a new line and take full width:</p>
+      <p><code>div, p, h1–h6, ul, ol, li, table, form, fieldset, blockquote, pre, hr, header, main, footer, section, article, aside, nav, figure, details, dialog</code></p>
+
+      <h3 style="margin-top:16px;">Inline Elements</h3>
+      <p>Flow within text, take only as much width as needed:</p>
+      <p><code>span, a, strong, em, b, i, u, s, del, ins, mark, code, kbd, abbr, cite, q, time, sub, sup, img, input, button, label, select, textarea, small, bdi, bdo, wbr</code></p>
+
+      <h3 style="margin-top:16px;">Void Elements (Self-Closing)</h3>
+      <p>Cannot have children, no closing tag needed:</p>
+      <p><code>br, hr, img, input, link, meta, base, area, col, embed, param, source, track, wbr</code></p>
+    </div>
+  </aside>
+
+  <hr />
+
+  <!-- ============================================================
+    12. PAGE FOOTER
+    ============================================================ -->
+  <footer>
+    <p>&copy; 2026 <strong>AI-Powered Web Development</strong> &mdash; Day 01: Complete HTML Reference</p>
+    <p>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noopener noreferrer">MDN HTML Reference</a>
+      &nbsp;|&nbsp;
+      <a href="https://html.spec.whatwg.org/" target="_blank" rel="noopener noreferrer">HTML Living Standard</a>
+      &nbsp;|&nbsp;
+      <a href="https://www.w3.org/WAI/ARIA/" target="_blank" rel="noopener noreferrer">WAI-ARIA</a>
+    </p>
+    <p style="font-size:0.82rem; color:#475569; margin-top:8px;">Built with &hearts; using pure HTML &mdash; zero dependencies.</p>
+  </footer>
+
+</div><!-- /page-wrapper -->
+
+<!-- ============================================================
+  13. SCRIPTS
+  Placed at the bottom for performance (DOM is already parsed).
+  ============================================================ -->
+<script>
+  // ── Canvas Drawing Demo ──────────────────────────────────
+  (function() {
+    const canvas = document.getElementById('myCanvas');
+    if (!canvas) return;
+    const ctx = canvas.getContext('2d');
+
+    // Background
+    ctx.fillStyle = '#0f172a';
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+    // Gradient bar
+    const grd = ctx.createLinearGradient(0, 0, canvas.width, 0);
+    grd.addColorStop(0, '#0ea5e9');
+    grd.addColorStop(0.5, '#7c3aed');
+    grd.addColorStop(1, '#f472b6');
+    ctx.fillStyle = grd;
+    ctx.fillRect(0, 0, canvas.width, 6);
+
+    // Circles
+    const colors = ['#0ea5e9','#7c3aed','#f472b6','#22c55e','#fbbf24'];
+    colors.forEach((color, i) => {
+      ctx.beginPath();
+      ctx.arc(60 + i * 90, 80, 36, 0, Math.PI * 2);
+      ctx.fillStyle = color;
+      ctx.globalAlpha = 0.85;
+      ctx.fill();
+      ctx.globalAlpha = 1;
+    });
+
+    // Labels
+    ctx.font = '13px Inter, sans-serif';
+    ctx.fillStyle = '#e2e8f0';
+    ctx.textAlign = 'center';
+    ['arc','arc','arc','arc','arc'].forEach((_, i) => {
+      ctx.fillText(colors[i], 60 + i * 90, 150);
+    });
+
+    // Text
+    ctx.font = 'bold 14px Inter, sans-serif';
+    ctx.fillStyle = '#94a3b8';
+    ctx.textAlign = 'left';
+    ctx.fillText('Canvas 2D API — shapes drawn with JavaScript', 10, 170);
+  })();
+</script>
+
+</body>
+</html>
