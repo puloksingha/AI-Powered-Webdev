@@ -37,22 +37,27 @@
   <meta property="og:title" content="Complete HTML — Zero to Advanced" />
   <meta property="og:description" content="A comprehensive HTML reference covering every concept." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://example.com/day-01" />
+  <meta property="og:site_name" content="AI-Powered Web Development" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:url" content="https://github.com/puloksingha/AI-Powered-Webdev" />
   <meta property="og:image" content="https://via.placeholder.com/1200x630" />
 
   <!-- ── Twitter Card ──────────────────────────────────────── -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Complete HTML — Zero to Advanced" />
   <meta name="twitter:description" content="Every HTML concept in one file." />
+  <meta name="twitter:image" content="https://via.placeholder.com/1200x630" />
 
   <!-- ── Theme Color (Browser UI color on mobile) ──────────── -->
   <meta name="theme-color" content="#0f172a" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <meta name="color-scheme" content="dark" />
 
   <!-- ── Favicon ───────────────────────────────────────────── -->
   <link rel="icon" type="image/png" href="favicon.png" />
 
   <!-- ── Canonical URL (SEO — avoid duplicate content) ─────── -->
-  <link rel="canonical" href="https://example.com/day-01" />
+  <link rel="canonical" href="https://github.com/puloksingha/AI-Powered-Webdev" />
 
   <!-- ── Preconnect (performance — speed up external fonts) ── -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -74,14 +79,18 @@
       line-height: 1.7;
       padding: 0 16px;
     }
+    .skip-link { position: absolute; left: 16px; top: -48px; background: #0ea5e9; color: #ffffff; padding: 8px 12px; border-radius: 6px; text-decoration: none; z-index: 1000; }
+    .skip-link:focus { top: 12px; }
     .page-wrapper { max-width: 900px; margin: 0 auto; padding: 40px 0 80px; }
     h1 { font-size: 2.5rem; color: #38bdf8; margin-bottom: 8px; }
+    .demo-h1 { font-size: 2rem; color: #38bdf8; font-weight: 700; margin-bottom: 8px; }
     h2 { font-size: 1.6rem; color: #7dd3fc; margin: 48px 0 12px; border-bottom: 1px solid #1e3a5f; padding-bottom: 6px; }
     h3 { font-size: 1.1rem; color: #93c5fd; margin: 24px 0 8px; }
     h4, h5, h6 { color: #bae6fd; margin: 16px 0 6px; }
     p  { margin-bottom: 12px; color: #cbd5e1; }
     a  { color: #38bdf8; text-decoration: underline; }
     a:hover { color: #7dd3fc; }
+    a:focus-visible, button:focus-visible, summary:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 3px solid #38bdf8; outline-offset: 2px; }
     code { font-family: 'Fira Code', monospace; background: #1e293b; color: #f472b6; padding: 2px 6px; border-radius: 4px; font-size: 0.88rem; }
     pre  { background: #1e293b; border: 1px solid #334155; border-radius: 8px; padding: 20px; overflow-x: auto; margin: 12px 0 20px; }
     pre code { background: none; padding: 0; color: #a5f3fc; font-size: 0.88rem; }
@@ -128,6 +137,7 @@
 </head>
 
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 <div class="page-wrapper">
 
   <!-- ============================================================
@@ -144,8 +154,9 @@
     4. NAVIGATION
     <nav> — primary navigation links
     ============================================================ -->
-  <nav aria-label="Page sections">
+  <nav aria-label="Page sections" id="top-nav">
     <ul class="nav-links">
+      <li><a href="#headings">Headings</a></li>
       <li><a href="#text">Text</a></li>
       <li><a href="#links">Links</a></li>
       <li><a href="#images">Images</a></li>
@@ -164,7 +175,7 @@
     5. MAIN CONTENT AREA
     <main> — the dominant unique content of the page
     ============================================================ -->
-  <main>
+  <main id="main-content">
 
     <!-- ──────────────────────────────────────────────────────
       SECTION 1 — HEADINGS
@@ -174,7 +185,7 @@
       <h2>1. Headings (h1 – h6)</h2>
       <p>Headings define the hierarchy of your content. There should only be <strong>one <code>&lt;h1&gt;</code></strong> per page (usually the page title). Use <code>h2</code>–<code>h6</code> for subsections.</p>
       <div class="card">
-        <h1>h1 — Page Title (Main Heading)</h1>
+        <p class="demo-h1"><code>&lt;h1&gt;</code> h1 - Page Title (Main Heading)</p>
         <h2>h2 — Section Heading</h2>
         <h3>h3 — Subsection Heading</h3>
         <h4>h4 — Sub-subsection</h4>
@@ -1207,3 +1218,4 @@ console.log(greet("World"));</code></pre>
 
 </body>
 </html>
+

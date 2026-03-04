@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Day 02 CSS Fundamentals project covering selectors, typography, box model, colors, and display properties." />
+  <title>Day 02 | CSS Fundamentals Project</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <p class="day-pill">Day 02 • CSS Fundamentals</p>
+      <h1 id="page-title">Personal Profile Card System</h1>
+      <p class="subtitle">A single-page project to practice selectors, color systems, typography, spacing, box model, and display behavior.</p>
+      <a class="cta" href="#profiles">Jump to Cards</a>
+    </div>
+  </header>
+
+  <main class="container" id="profiles">
+    <section class="panel" aria-labelledby="concepts-title">
+      <h2 id="concepts-title">Concept Checklist</h2>
+      <ul class="checklist">
+        <li><span class="dot dot-ok"></span> Element selectors and class selectors</li>
+        <li><span class="dot dot-ok"></span> ID selector and descendant selectors</li>
+        <li><span class="dot dot-ok"></span> Typography scale and readable line height</li>
+        <li><span class="dot dot-ok"></span> Box model: margin, border, padding, content</li>
+        <li><span class="dot dot-ok"></span> Display: block, inline, inline-block</li>
+      </ul>
+    </section>
+
+    <section class="panel" aria-labelledby="selector-demo-title">
+      <h2 id="selector-demo-title">Selector Demo Area</h2>
+      <p>This area intentionally mixes IDs, classes, and nested text styles.</p>
+
+      <div id="selector-demo" class="demo-box">
+        <p>Element selector styles all paragraphs in this box.</p>
+        <p class="highlight">Class selector styles this highlighted line.</p>
+        <p><span>Descendant selector targets this nested span.</span></p>
+      </div>
+
+      <div class="chip-row" aria-label="Display examples">
+        <span class="chip">inline</span>
+        <span class="chip">inline</span>
+        <span class="chip">inline</span>
+      </div>
+      <div class="chip-row">
+        <span class="chip chip-block">block example A</span>
+        <span class="chip chip-block">block example B</span>
+      </div>
+      <div class="chip-row">
+        <span class="chip chip-inline-block">inline-block A</span>
+        <span class="chip chip-inline-block">inline-block B</span>
+      </div>
+    </section>
+
+    <section class="panel" aria-labelledby="cards-title">
+      <h2 id="cards-title">Profile Cards (Box Model Practice)</h2>
+      <div class="cards">
+        <article class="card" aria-labelledby="profile-a-title">
+          <h3 id="profile-a-title">Ariana Roy</h3>
+          <p class="role">UI Developer</p>
+          <p>Enjoys building semantic interfaces and scalable CSS architecture.</p>
+          <a href="#" class="card-link">View Portfolio</a>
+        </article>
+
+        <article class="card" aria-labelledby="profile-b-title">
+          <h3 id="profile-b-title">Nabil Hasan</h3>
+          <p class="role">Frontend Learner</p>
+          <p>Focused on mastering layout systems and responsive design patterns.</p>
+          <a href="#" class="card-link">View Portfolio</a>
+        </article>
+
+        <article class="card" aria-labelledby="profile-c-title">
+          <h3 id="profile-c-title">Ritu Sharma</h3>
+          <p class="role">AI Product Intern</p>
+          <p>Combines prompt design with practical web UI implementation.</p>
+          <a href="#" class="card-link">View Portfolio</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>Day 02 complete when this page is fully styled, responsive, and readable on mobile and desktop.</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,4 +1,4 @@
-# 🤖 AI-Powered Web Development
+﻿# 🤖 AI-Powered Web Development
 
 > A structured, day-by-day learning journey through modern web development — accelerated and enhanced with Artificial Intelligence tools and techniques.
 
@@ -31,16 +31,16 @@ Whether you're a beginner or an experienced developer looking to leverage AI in 
 
 | # | Topic | Folder | Files | Status |
 |---|-------|--------|-------|--------|
-| Day 01 | Complete HTML — Zero to Advanced | [`HTML/`](HTML/) | [`index.html`](HTML/index.html) | ✅ Completed |
-| Day 02 | CSS Fundamentals | `HTML/Day-02/` | — | ⏳ Upcoming |
-| Day 03 | CSS Layouts — Flexbox & Grid | `CSS/Day-03/` | — | ⏳ Upcoming |
-| Day 04 | Responsive Web Design | `CSS/Day-04/` | — | ⏳ Upcoming |
-| Day 05 | JavaScript Fundamentals | `JavaScript/Day-05/` | — | ⏳ Upcoming |
-| Day 06 | DOM Manipulation | `JavaScript/Day-06/` | — | ⏳ Upcoming |
-| Day 07 | ES6+ Modern JavaScript | `JavaScript/Day-07/` | — | ⏳ Upcoming |
-| Day 08 | AI-Assisted Coding with GitHub Copilot | `Projects/Day-08/` | — | ⏳ Upcoming |
-| Day 09 | Integrating OpenAI API | `Projects/Day-09/` | — | ⏳ Upcoming |
-| Day 10 | Building a Full AI-Powered Web App | `Projects/Day-10/` | — | ⏳ Upcoming |
+| Day 01 | Complete HTML — Zero to Advanced | [`HTML/`](HTML/) | [`index.html`](HTML/index.html), [`notes.md`](HTML/notes.md), [`progress.md`](HTML/progress.md) | ✅ Completed |
+| Day 02 | CSS Fundamentals | [`CSS/Day-02/`](CSS/Day-02/) | [`index.html`](CSS/Day-02/index.html), [`styles.css`](CSS/Day-02/styles.css), [`README.md`](CSS/Day-02/README.md), [`progress.md`](CSS/Day-02/progress.md) | 🚧 In Progress |
+| Day 03 | CSS Layouts — Flexbox & Grid | [`CSS/Day-03/`](CSS/Day-03/) | [`index.html`](CSS/Day-03/index.html), [`styles.css`](CSS/Day-03/styles.css), [`README.md`](CSS/Day-03/README.md), [`progress.md`](CSS/Day-03/progress.md) | ⏳ Upcoming |
+| Day 04 | Responsive Web Design | [`CSS/Day-04/`](CSS/Day-04/) | [`index.html`](CSS/Day-04/index.html), [`styles.css`](CSS/Day-04/styles.css), [`README.md`](CSS/Day-04/README.md), [`progress.md`](CSS/Day-04/progress.md) | ⏳ Upcoming |
+| Day 05 | JavaScript Fundamentals | [`JavaScript/Day-05/`](JavaScript/Day-05/) | [`index.html`](JavaScript/Day-05/index.html), [`app.js`](JavaScript/Day-05/app.js), [`README.md`](JavaScript/Day-05/README.md), [`progress.md`](JavaScript/Day-05/progress.md) | ⏳ Upcoming |
+| Day 06 | DOM Manipulation | [`JavaScript/Day-06/`](JavaScript/Day-06/) | [`index.html`](JavaScript/Day-06/index.html), [`styles.css`](JavaScript/Day-06/styles.css), [`app.js`](JavaScript/Day-06/app.js), [`README.md`](JavaScript/Day-06/README.md), [`progress.md`](JavaScript/Day-06/progress.md) | ⏳ Upcoming |
+| Day 07 | ES6+ Modern JavaScript | [`JavaScript/Day-07/`](JavaScript/Day-07/) | [`index.html`](JavaScript/Day-07/index.html), [`app.js`](JavaScript/Day-07/app.js), [`README.md`](JavaScript/Day-07/README.md), [`progress.md`](JavaScript/Day-07/progress.md) | ⏳ Upcoming |
+| Day 08 | AI-Assisted Coding with GitHub Copilot | [`Projects/Day-08/`](Projects/Day-08/) | [`README.md`](Projects/Day-08/README.md), [`notes.md`](Projects/Day-08/notes.md), [`progress.md`](Projects/Day-08/progress.md) | ⏳ Upcoming |
+| Day 09 | Integrating OpenAI API | [`Projects/Day-09/`](Projects/Day-09/) | [`README.md`](Projects/Day-09/README.md), [`.env.example`](Projects/Day-09/.env.example), [`progress.md`](Projects/Day-09/progress.md) | ⏳ Upcoming |
+| Day 10 | Building a Full AI-Powered Web App | [`Projects/Day-10/`](Projects/Day-10/) | [`README.md`](Projects/Day-10/README.md), [`progress.md`](Projects/Day-10/progress.md) | ⏳ Upcoming |
 
 ---
 
@@ -126,14 +126,268 @@ A single-file, zero-dependency **complete HTML reference page** covering every m
 
 ---
 
-## 📁 Current Folder Structure
+## � Day 02 — CSS Fundamentals 🚧
+
+> **Status:** In Progress · **Date:** March 4, 2026
+
+### Objective
+Learn core CSS syntax and styling fundamentals.
+
+### Topics Covered
+- ✅ Selectors — element, class, id, descendant, pseudo-classes
+- ✅ Colors, units (`px`, `em`, `rem`, `%`) and typography
+- ✅ Box model — `margin`, `border`, `padding`, `content`
+- ✅ Display basics — `block`, `inline`, `inline-block`
+
+### Deliverable
+A styled profile/card page with at least 3 sections.
+
+### Files
+
+| File | Description |
+|------|-------------|
+| [`CSS/Day-02/index.html`](CSS/Day-02/index.html) | HTML structure for the card page |
+| [`CSS/Day-02/styles.css`](CSS/Day-02/styles.css) | Styling with selectors, box model, and typography |
+| [`CSS/Day-02/README.md`](CSS/Day-02/README.md) | Day objectives and checklist |
+| [`CSS/Day-02/progress.md`](CSS/Day-02/progress.md) | Daily progress tracker |
+
+### AI Tip 💡
+
+> Ask Copilot: `/* style a card component with hover effect, shadow, and rounded corners */` — then refine the generated CSS to match your design.
+
+---
+
+## 📅 Day 03 — CSS Layouts: Flexbox & Grid ⏳
+
+> **Status:** Upcoming
+
+### Objective
+Build modern layouts using Flexbox and CSS Grid.
+
+### Topics Covered
+- Flex axis, alignment, `flex-wrap`, `flex-grow`
+- Grid columns/rows, `gap`, `grid-template-areas`
+- Nested layout patterns
+
+### Deliverable
+A landing page with header, hero, features grid, and footer.
+
+### Files
+
+| File | Description |
+|------|-------------|
+| [`CSS/Day-03/index.html`](CSS/Day-03/index.html) | Landing page HTML |
+| [`CSS/Day-03/styles.css`](CSS/Day-03/styles.css) | Flexbox and Grid layout styles |
+| [`CSS/Day-03/README.md`](CSS/Day-03/README.md) | Day objectives and checklist |
+| [`CSS/Day-03/progress.md`](CSS/Day-03/progress.md) | Daily progress tracker |
+
+---
+
+## 📅 Day 04 — Responsive Web Design ⏳
+
+> **Status:** Upcoming
+
+### Objective
+Make layouts responsive using a mobile-first strategy.
+
+### Topics Covered
+- Media queries for breakpoints
+- Relative units — `rem`, `%`, `vw`, `vh`
+- Responsive images and fluid containers
+
+### Deliverable
+Convert the Day 03 layout into fully responsive versions for mobile, tablet, and desktop.
+
+### Files
+
+| File | Description |
+|------|-------------|
+| [`CSS/Day-04/index.html`](CSS/Day-04/index.html) | Responsive HTML page |
+| [`CSS/Day-04/styles.css`](CSS/Day-04/styles.css) | Mobile-first responsive styles |
+| [`CSS/Day-04/README.md`](CSS/Day-04/README.md) | Day objectives and checklist |
+| [`CSS/Day-04/progress.md`](CSS/Day-04/progress.md) | Daily progress tracker |
+
+---
+
+## 📅 Day 05 — JavaScript Fundamentals ⏳
+
+> **Status:** Upcoming
+
+### Objective
+Understand JavaScript syntax, logic, and core data structures.
+
+### Topics Covered
+- Variables — `let`, `const`, data types
+- Conditions, loops, and functions
+- Arrays and objects
+
+### Deliverable
+A mini calculator and 10 solved JS exercises.
+
+### Files
+
+| File | Description |
+|------|-------------|
+| [`JavaScript/Day-05/index.html`](JavaScript/Day-05/index.html) | HTML shell for exercises |
+| [`JavaScript/Day-05/app.js`](JavaScript/Day-05/app.js) | JS fundamentals and calculator logic |
+| [`JavaScript/Day-05/README.md`](JavaScript/Day-05/README.md) | Day objectives and checklist |
+| [`JavaScript/Day-05/progress.md`](JavaScript/Day-05/progress.md) | Daily progress tracker |
+
+---
+
+## 📅 Day 06 — DOM Manipulation ⏳
+
+> **Status:** Upcoming
+
+### Objective
+Use JavaScript to read, update, and react to HTML elements.
+
+### Topics Covered
+- `querySelector`, `querySelectorAll`
+- Event listeners — click, keydown, submit
+- Creating and removing DOM nodes
+- Form input handling and validation
+
+### Deliverable
+A to-do app with add, complete, delete, and filter functionality.
+
+### Files
+
+| File | Description |
+|------|-------------|
+| [`JavaScript/Day-06/index.html`](JavaScript/Day-06/index.html) | To-do app HTML |
+| [`JavaScript/Day-06/styles.css`](JavaScript/Day-06/styles.css) | To-do app styles |
+| [`JavaScript/Day-06/app.js`](JavaScript/Day-06/app.js) | DOM manipulation logic |
+| [`JavaScript/Day-06/README.md`](JavaScript/Day-06/README.md) | Day objectives and checklist |
+| [`JavaScript/Day-06/progress.md`](JavaScript/Day-06/progress.md) | Daily progress tracker |
+
+---
+
+## 📅 Day 07 — ES6+ Modern JavaScript ⏳
+
+> **Status:** Upcoming
+
+### Objective
+Adopt modern JavaScript features for cleaner and scalable code.
+
+### Topics Covered
+- Arrow functions and template literals
+- Destructuring, spread/rest operators
+- Modules — `import` / `export`
+- Async/await with `fetch` and proper error handling
+
+### Deliverable
+A small app that fetches and renders data from a public API.
+
+### Files
+
+| File | Description |
+|------|-------------|
+| [`JavaScript/Day-07/index.html`](JavaScript/Day-07/index.html) | API app HTML |
+| [`JavaScript/Day-07/app.js`](JavaScript/Day-07/app.js) | Modern JS with fetch and async/await |
+| [`JavaScript/Day-07/README.md`](JavaScript/Day-07/README.md) | Day objectives and checklist |
+| [`JavaScript/Day-07/progress.md`](JavaScript/Day-07/progress.md) | Daily progress tracker |
+
+---
+
+## 📅 Day 08 — AI-Assisted Coding with GitHub Copilot ⏳
+
+> **Status:** Upcoming
+
+### Objective
+Use GitHub Copilot intentionally, then critically review and improve the generated code.
+
+### Topics Covered
+- Writing high-quality prompts via descriptive comments
+- Accepting, editing, and rejecting Copilot suggestions
+- Security and readability review of AI-generated code
+
+### Deliverable
+One feature built with Copilot assistance, plus a review note documenting what was changed manually.
+
+### Files
+
+| File | Description |
+|------|-------------|
+| [`Projects/Day-08/README.md`](Projects/Day-08/README.md) | Day objectives and checklist |
+| [`Projects/Day-08/notes.md`](Projects/Day-08/notes.md) | Copilot prompts and review notes |
+| [`Projects/Day-08/progress.md`](Projects/Day-08/progress.md) | Daily progress tracker |
+
+---
+
+## 📅 Day 09 — Integrating OpenAI API ⏳
+
+> **Status:** Upcoming
+
+### Objective
+Integrate an OpenAI-powered feature safely into a web application.
+
+### Topics Covered
+- API key safety — never expose keys in frontend code
+- Request/response handling with `fetch`
+- Loading and error UI states
+- Rate-limit and timeout handling
+
+### Deliverable
+A working AI assistant or text tool with loading and error UI states.
+
+### Files
+
+| File | Description |
+|------|-------------|
+| [`Projects/Day-09/README.md`](Projects/Day-09/README.md) | Day objectives and checklist |
+| [`Projects/Day-09/progress.md`](Projects/Day-09/progress.md) | Daily progress tracker |
+
+---
+
+## 📅 Day 10 — Full AI-Powered Web App ⏳
+
+> **Status:** Upcoming
+
+### Objective
+Ship a complete capstone project combining HTML, CSS, JavaScript, and AI integration.
+
+### Topics Covered
+- Feature planning and scope control
+- Code organization and reuse across modules
+- Final QA, deployment, and documentation
+
+### Deliverable
+A deployable AI-powered web application with a project README.
+
+### Files
+
+| File | Description |
+|------|-------------|
+| [`Projects/Day-10/README.md`](Projects/Day-10/README.md) | Project documentation |
+| [`Projects/Day-10/progress.md`](Projects/Day-10/progress.md) | Daily progress tracker |
+
+---
+
+## �📁 Current Folder Structure
 
 ```
 AI-Powered-Webdev/
 ├── HTML/
-│   └── index.html        ← Complete HTML reference (zero to advanced)
-├── LICENSE               ← MIT License
-└── README.md             ← This file
+│   ├── index.html
+│   ├── notes.md
+│   └── progress.md
+├── CSS/
+│   ├── Day-02/
+│   ├── Day-03/
+│   └── Day-04/
+├── JavaScript/
+│   ├── Day-05/
+│   ├── Day-06/
+│   └── Day-07/
+├── Projects/
+│   ├── Day-08/
+│   ├── Day-09/
+│   └── Day-10/
+├── templates/
+│   └── daily-tracker.md
+├── LICENSE
+└── README.md
 ```
 
 ---
