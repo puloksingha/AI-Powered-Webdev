@@ -17,7 +17,7 @@ Learn core CSS syntax and styling fundamentals.
 A styled profile/card page with at least 3 sections.
 
 ## Done Checklist
-- [ ] External stylesheet linked
-- [ ] Reusable CSS classes
-- [ ] Good spacing and typography
-- [ ] Commit with `feat(day-02): css fundamentals page`
+- [x] External stylesheet linked
+- [x] Reusable CSS classes
+- [x] Good spacing and typography
+- [x] Commit with `feat(day-02): css fundamentals page`
