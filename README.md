@@ -32,7 +32,7 @@ Whether you're a beginner or an experienced developer looking to leverage AI in 
 | # | Topic | Folder | Files | Status |
 |---|-------|--------|-------|--------|
 | Day 01 | Complete HTML — Zero to Advanced | [`HTML/`](HTML/) | [`index.html`](HTML/index.html), [`notes.md`](HTML/notes.md), [`progress.md`](HTML/progress.md) | ✅ Completed |
-| Day 02 | CSS Fundamentals | [`CSS/Day-02/`](CSS/Day-02/) | [`index.html`](CSS/Day-02/index.html), [`styles.css`](CSS/Day-02/styles.css), [`README.md`](CSS/Day-02/README.md), [`progress.md`](CSS/Day-02/progress.md) | 🚧 In Progress |
+| Day 02 | CSS Fundamentals | [`CSS/Day-02/`](CSS/Day-02/) | [`index.html`](CSS/Day-02/index.html), [`styles.css`](CSS/Day-02/styles.css), [`README.md`](CSS/Day-02/README.md), [`progress.md`](CSS/Day-02/progress.md) | ✅ Completed |
 | Day 03 | CSS Layouts — Flexbox & Grid | [`CSS/Day-03/`](CSS/Day-03/) | [`index.html`](CSS/Day-03/index.html), [`styles.css`](CSS/Day-03/styles.css), [`README.md`](CSS/Day-03/README.md), [`progress.md`](CSS/Day-03/progress.md) | ⏳ Upcoming |
 | Day 04 | Responsive Web Design | [`CSS/Day-04/`](CSS/Day-04/) | [`index.html`](CSS/Day-04/index.html), [`styles.css`](CSS/Day-04/styles.css), [`README.md`](CSS/Day-04/README.md), [`progress.md`](CSS/Day-04/progress.md) | ⏳ Upcoming |
 | Day 05 | JavaScript Fundamentals | [`JavaScript/Day-05/`](JavaScript/Day-05/) | [`index.html`](JavaScript/Day-05/index.html), [`app.js`](JavaScript/Day-05/app.js), [`README.md`](JavaScript/Day-05/README.md), [`progress.md`](JavaScript/Day-05/progress.md) | ⏳ Upcoming |
@@ -126,34 +126,77 @@ A single-file, zero-dependency **complete HTML reference page** covering every m
 
 ---
 
-## � Day 02 — CSS Fundamentals 🚧
+## 📅 Day 02 — CSS Fundamentals ✅
 
-> **Status:** In Progress · **Date:** March 4, 2026
+> **Status:** Completed · **Date:** March 4, 2026
 
-### Objective
-Learn core CSS syntax and styling fundamentals.
+### What was built
+A single-page **Personal Profile Card System** demonstrating core CSS concepts — selectors, colour systems, typography scale, box model, and display behaviour — styled with CSS custom properties and a clean, accessible layout.
 
 ### Topics Covered
-- ✅ Selectors — element, class, id, descendant, pseudo-classes
-- ✅ Colors, units (`px`, `em`, `rem`, `%`) and typography
-- ✅ Box model — `margin`, `border`, `padding`, `content`
-- ✅ Display basics — `block`, `inline`, `inline-block`
+
+**Selectors**
+- ✅ Element selectors, class selectors, ID selector
+- ✅ Descendant selectors (`#parent .child`, `#parent p span`)
+- ✅ Hover and `focus-visible` pseudo-classes
+
+**Colours & Typography**
+- ✅ CSS custom properties (`--variable`) for a consistent colour system
+- ✅ `clamp()` for fluid font sizes across viewport widths
+- ✅ Line-height, letter-spacing, and readable `max-width` for body copy
+
+**Box Model**
+- ✅ `box-sizing: border-box` applied globally
+- ✅ Margin, border, padding, and content dimensions
+- ✅ `box-shadow` with custom elevation levels
+
+**Display & Layout**
+- ✅ `display: block`, `inline`, and `inline-block` – live comparison chips
+- ✅ CSS Grid with `auto-fit` and `minmax` for the card row
+- ✅ `scroll-behavior: smooth` for anchor navigation
+
+**Transitions & Polish**
+- ✅ Hover lift effect on cards and CTA button via `transform: translateY()`
+- ✅ `transition` on colours, shadows, and transforms
+- ✅ Accessible `focus-visible` rings on all interactive elements
 
 ### Deliverable
-A styled profile/card page with at least 3 sections.
+A styled profile/card page with 3 sections: Concept Checklist, Selector Demo Area, and Profile Cards.
 
 ### Files
 
 | File | Description |
 |------|-------------|
-| [`CSS/Day-02/index.html`](CSS/Day-02/index.html) | HTML structure for the card page |
-| [`CSS/Day-02/styles.css`](CSS/Day-02/styles.css) | Styling with selectors, box model, and typography |
-| [`CSS/Day-02/README.md`](CSS/Day-02/README.md) | Day objectives and checklist |
-| [`CSS/Day-02/progress.md`](CSS/Day-02/progress.md) | Daily progress tracker |
+| [`CSS/Day-02/index.html`](CSS/Day-02/index.html) | Semantic HTML structure for the card page |
+| [`CSS/Day-02/styles.css`](CSS/Day-02/styles.css) | Full styles — selectors, box model, typography, transitions |
+| [`CSS/Day-02/README.md`](CSS/Day-02/README.md) | Day objectives and done checklist |
+| [`CSS/Day-02/progress.md`](CSS/Day-02/progress.md) | Completed progress tracker with learnings |
+
+### Key Code Example
+
+```css
+:root {
+  --primary: #0b7285;
+  --surface: #ffffff;
+  --shadow: 0 12px 24px rgba(19, 37, 58, 0.08);
+}
+
+.card {
+  border-radius: 14px;
+  padding: 18px;
+  box-shadow: var(--shadow);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.card:hover {
+  box-shadow: 0 16px 32px rgba(19, 37, 58, 0.14);
+  transform: translateY(-3px);
+}
+```
 
 ### AI Tip 💡
 
-> Ask Copilot: `/* style a card component with hover effect, shadow, and rounded corners */` — then refine the generated CSS to match your design.
+> Ask Copilot: `/* style a card component with hover lift effect, shadow, and rounded corners using CSS custom properties */` — then refine the palette and spacing to your own design system.
 
 ---
 
