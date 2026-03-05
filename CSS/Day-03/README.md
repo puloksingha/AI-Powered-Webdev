@@ -16,7 +16,7 @@ Build modern layouts using Flexbox and CSS Grid.
 A landing page with header, hero, features grid, and footer.
 
 ## Done Checklist
-- [ ] Flexbox used for nav/row layouts
-- [ ] Grid used for feature/cards section
-- [ ] Layout does not break on narrow screens
+- [x] Flexbox used for nav/row layouts
+- [x] Grid used for feature/cards section
+- [x] Layout does not break on narrow screens
 - [ ] Commit with `feat(day-03): flex and grid layout`

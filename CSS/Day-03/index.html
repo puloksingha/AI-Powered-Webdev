@@ -3,13 +3,110 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Day 03 - Flexbox and Grid</title>
+  <meta name="description" content="Day 03 CSS project: landing page layout practice using Flexbox and Grid." />
+  <title>Day 03 | Flexbox and Grid Landing Page</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <main>
-    <h1>Day 03 - Flexbox and Grid</h1>
-    <p>Build your layout practice here.</p>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top">LayoutLab</a>
+      <nav aria-label="Primary navigation">
+        <ul class="nav-links">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#workflow">Workflow</a></li>
+          <li><a href="#footer">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-layout">
+        <div class="hero-content">
+          <p class="eyebrow">Day 03 - CSS Layouts</p>
+          <h1>Build clean landing pages with Flexbox and Grid</h1>
+          <p class="hero-text">
+            This exercise focuses on axis alignment, wrapping, grid tracks, and nested layout patterns
+            to create a practical one-page website.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#features">Explore Features</a>
+            <a class="btn btn-secondary" href="#workflow">See Workflow</a>
+          </div>
+        </div>
+
+        <aside class="hero-panel" aria-label="Project summary">
+          <h2>Project Targets</h2>
+          <ul>
+            <li>Flex navigation and action rows</li>
+            <li>Grid based feature section</li>
+            <li>No layout breaks on narrow screens</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section class="stats" id="workflow" aria-label="Workflow stats">
+      <div class="container stats-row">
+        <article class="stat">
+          <p class="stat-value">2</p>
+          <p class="stat-label">Layout Systems</p>
+        </article>
+        <article class="stat">
+          <p class="stat-value">6</p>
+          <p class="stat-label">Core Components</p>
+        </article>
+        <article class="stat">
+          <p class="stat-value">100%</p>
+          <p class="stat-label">Responsive Blocks</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="features-section" id="features">
+      <div class="container">
+        <h2>Feature Grid</h2>
+        <p class="section-intro">
+          The cards below are arranged with CSS Grid and keep stable spacing across screen sizes.
+        </p>
+
+        <div class="features-grid">
+          <article class="feature-card">
+            <h3>Flexible Nav</h3>
+            <p>Primary links stay aligned with brand text using horizontal Flexbox alignment.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Hero Split Layout</h3>
+            <p>Content and summary panel form a two-column layout that collapses cleanly on mobile.</p>
+          </article>
+          <article class="feature-card">
+            <h3>CTA Row</h3>
+            <p>Buttons use wrapping behavior to avoid overflow when viewport width becomes tight.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Auto-fit Grid</h3>
+            <p>Cards adapt with `repeat(auto-fit, minmax(...))` for fluid responsive columns.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Consistent Rhythm</h3>
+            <p>A shared spacing system keeps sections balanced and readable.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Accessible Structure</h3>
+            <p>Semantic regions, heading order, and focus-visible states improve keyboard usability.</p>
+          </article>
+        </div>
+      </div>
+    </section>
   </main>
+
+  <footer class="site-footer" id="footer">
+    <div class="container footer-row">
+      <p>Day 03 completed: Flexbox and Grid landing page deliverable.</p>
+      <a href="#top">Back to top</a>
+    </div>
+  </footer>
 </body>
 </html>
