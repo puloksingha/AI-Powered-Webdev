@@ -33,7 +33,7 @@ Whether you're a beginner or an experienced developer looking to leverage AI in 
 |---|-------|--------|-------|--------|
 | Day 01 | Complete HTML — Zero to Advanced | [`HTML/`](HTML/) | [`index.html`](HTML/index.html), [`notes.md`](HTML/notes.md), [`progress.md`](HTML/progress.md) | ✅ Completed |
 | Day 02 | CSS Fundamentals | [`CSS/Day-02/`](CSS/Day-02/) | [`index.html`](CSS/Day-02/index.html), [`styles.css`](CSS/Day-02/styles.css), [`README.md`](CSS/Day-02/README.md), [`progress.md`](CSS/Day-02/progress.md) | ✅ Completed |
-| Day 03 | CSS Layouts — Flexbox & Grid | [`CSS/Day-03/`](CSS/Day-03/) | [`index.html`](CSS/Day-03/index.html), [`styles.css`](CSS/Day-03/styles.css), [`README.md`](CSS/Day-03/README.md), [`progress.md`](CSS/Day-03/progress.md) | ⏳ Upcoming |
+| Day 03 | CSS Layouts — Flexbox & Grid | [`CSS/Day-03/`](CSS/Day-03/) | [`index.html`](CSS/Day-03/index.html), [`styles.css`](CSS/Day-03/styles.css), [`README.md`](CSS/Day-03/README.md), [`progress.md`](CSS/Day-03/progress.md) | ✅ Completed |
 | Day 04 | Responsive Web Design | [`CSS/Day-04/`](CSS/Day-04/) | [`index.html`](CSS/Day-04/index.html), [`styles.css`](CSS/Day-04/styles.css), [`README.md`](CSS/Day-04/README.md), [`progress.md`](CSS/Day-04/progress.md) | ⏳ Upcoming |
 | Day 05 | JavaScript Fundamentals | [`JavaScript/Day-05/`](JavaScript/Day-05/) | [`index.html`](JavaScript/Day-05/index.html), [`app.js`](JavaScript/Day-05/app.js), [`README.md`](JavaScript/Day-05/README.md), [`progress.md`](JavaScript/Day-05/progress.md) | ⏳ Upcoming |
 | Day 06 | DOM Manipulation | [`JavaScript/Day-06/`](JavaScript/Day-06/) | [`index.html`](JavaScript/Day-06/index.html), [`styles.css`](JavaScript/Day-06/styles.css), [`app.js`](JavaScript/Day-06/app.js), [`README.md`](JavaScript/Day-06/README.md), [`progress.md`](JavaScript/Day-06/progress.md) | ⏳ Upcoming |
@@ -200,17 +200,29 @@ A styled profile/card page with 3 sections: Concept Checklist, Selector Demo Are
 
 ---
 
-## 📅 Day 03 — CSS Layouts: Flexbox & Grid ⏳
+## 📅 Day 03 — CSS Layouts: Flexbox & Grid ✅
 
-> **Status:** Upcoming
+> **Status:** Completed · **Date:** March 5, 2026
 
-### Objective
-Build modern layouts using Flexbox and CSS Grid.
+### What was built
+A fully structured **landing page** with a sticky navigation header, hero section, stats strip, features card grid, and footer — all laid out using Flexbox and CSS Grid without any frameworks.
 
 ### Topics Covered
-- Flex axis, alignment, `flex-wrap`, `flex-grow`
-- Grid columns/rows, `gap`, `grid-template-areas`
-- Nested layout patterns
+
+**Flexbox**
+- ✅ Flex axis, `justify-content`, and `align-items` for nav and hero rows
+- ✅ `flex-wrap: wrap` for responsive action rows on narrow screens
+- ✅ `flex-grow` and `flex-shrink` for proportional sizing
+
+**CSS Grid**
+- ✅ `grid-template-columns` with `repeat(auto-fit, minmax())` for responsive card columns
+- ✅ `gap` for consistent spacing between grid cells
+- ✅ `grid-template-areas` for named, readable layout regions
+
+**Layout Patterns**
+- ✅ Nested layouts — Flexbox inside Grid sections
+- ✅ Semantic sectioning: `<header>`, `<main>`, `<section>`, `<footer>`
+- ✅ Mobile responsiveness checked across screen widths
 
 ### Deliverable
 A landing page with header, hero, features grid, and footer.
@@ -219,10 +231,34 @@ A landing page with header, hero, features grid, and footer.
 
 | File | Description |
 |------|-------------|
-| [`CSS/Day-03/index.html`](CSS/Day-03/index.html) | Landing page HTML |
-| [`CSS/Day-03/styles.css`](CSS/Day-03/styles.css) | Flexbox and Grid layout styles |
-| [`CSS/Day-03/README.md`](CSS/Day-03/README.md) | Day objectives and checklist |
-| [`CSS/Day-03/progress.md`](CSS/Day-03/progress.md) | Daily progress tracker |
+| [`CSS/Day-03/index.html`](CSS/Day-03/index.html) | Landing page HTML with semantic structure |
+| [`CSS/Day-03/styles.css`](CSS/Day-03/styles.css) | Flexbox nav/hero + CSS Grid feature cards |
+| [`CSS/Day-03/README.md`](CSS/Day-03/README.md) | Day objectives and done checklist |
+| [`CSS/Day-03/progress.md`](CSS/Day-03/progress.md) | Completed progress tracker with learnings |
+
+### Key Code Example
+
+```css
+/* Flexbox nav */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/* Responsive Grid for feature cards */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+```
+
+### AI Tip 💡
+
+> Prompt Copilot: `/* responsive features section using CSS Grid with auto-fit and minmax */` — it will scaffold the grid container and card styles. Then adjust the `minmax()` values to match your design's minimum card width.
 
 ---
 
