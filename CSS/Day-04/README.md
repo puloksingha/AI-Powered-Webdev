@@ -16,7 +16,7 @@ Make layouts responsive using a mobile-first strategy.
 Convert Day 03 layout into fully responsive versions for mobile/tablet/desktop.
 
 ## Done Checklist
-- [ ] Mobile-first base styles
-- [ ] At least 2 breakpoints
-- [ ] Typography and spacing scale well
+- [x] Mobile-first base styles
+- [x] At least 2 breakpoints
+- [x] Typography and spacing scale well
 - [ ] Commit with `feat(day-04): responsive redesign`

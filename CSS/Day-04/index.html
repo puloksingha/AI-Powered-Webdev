@@ -3,13 +3,152 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Day 04 - Responsive Design</title>
+  <meta name="description" content="Day 04 CSS project: responsive redesign using mobile-first strategy, media queries, and relative units." />
+  <title>Day 04 | Responsive Web Design</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <main>
-    <h1>Day 04 - Responsive Design</h1>
-    <p>Build your responsive practice here.</p>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top">ResponsiveLab</a>
+      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <nav aria-label="Primary navigation" class="main-nav">
+        <ul class="nav-links">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#workflow">Workflow</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#footer">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-layout">
+        <div class="hero-content">
+          <p class="eyebrow">Day 04 — Responsive Design</p>
+          <h1>Mobile-first layouts that adapt to every screen</h1>
+          <p class="hero-text">
+            This exercise converts the Day 03 landing page into a fully responsive
+            design using media queries, relative units, and fluid containers.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#features">Explore Features</a>
+            <a class="btn btn-secondary" href="#workflow">See Workflow</a>
+          </div>
+        </div>
+
+        <aside class="hero-panel" aria-label="Responsive targets">
+          <h2>Responsive Targets</h2>
+          <ul>
+            <li>Mobile-first base styles</li>
+            <li>Tablet breakpoint at 48rem</li>
+            <li>Desktop breakpoint at 64rem</li>
+            <li>Fluid typography with clamp()</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section class="stats" id="workflow" aria-label="Workflow stats">
+      <div class="container stats-row">
+        <article class="stat">
+          <p class="stat-value">3</p>
+          <p class="stat-label">Breakpoints</p>
+        </article>
+        <article class="stat">
+          <p class="stat-value">rem</p>
+          <p class="stat-label">Relative Units</p>
+        </article>
+        <article class="stat">
+          <p class="stat-value">100%</p>
+          <p class="stat-label">Fluid Containers</p>
+        </article>
+        <article class="stat">
+          <p class="stat-value">0px</p>
+          <p class="stat-label">Fixed Widths</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="features-section" id="features">
+      <div class="container">
+        <h2>Responsive Feature Grid</h2>
+        <p class="section-intro">
+          Each card adapts from a single-column stack on mobile to a multi-column grid on
+          wider screens, using auto-fit and minmax for fluid columns.
+        </p>
+
+        <div class="features-grid">
+          <article class="feature-card">
+            <h3>Media Queries</h3>
+            <p>Breakpoints at 48rem and 64rem reshape layout, spacing, and typography for each device tier.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Relative Units</h3>
+            <p>All spacing and font sizes use rem, %, and vw instead of fixed pixels for true scalability.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Fluid Typography</h3>
+            <p>Headings scale smoothly with clamp() — no jumpy font size changes between breakpoints.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Mobile-First Nav</h3>
+            <p>Navigation starts as a collapsible stack on small screens and expands to a horizontal bar on tablets.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Responsive Images</h3>
+            <p>Images use max-width: 100% and height: auto to fit any container without overflow.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Container Queries</h3>
+            <p>Fluid containers use min(), percentage widths, and auto margins to center content responsively.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials" id="testimonials">
+      <div class="container">
+        <h2>What Developers Say</h2>
+        <div class="testimonial-grid">
+          <blockquote class="testimonial-card">
+            <p>"Mobile-first thinking completely changed how I approach layout. Start small, then enhance."</p>
+            <cite>— Frontend Dev</cite>
+          </blockquote>
+          <blockquote class="testimonial-card">
+            <p>"Using rem-based spacing made my designs consistent across every screen size without effort."</p>
+            <cite>— UI Designer</cite>
+          </blockquote>
+          <blockquote class="testimonial-card">
+            <p>"clamp() for typography is a game-changer. One line replaces three media queries."</p>
+            <cite>— CSS Enthusiast</cite>
+          </blockquote>
+        </div>
+      </div>
+    </section>
   </main>
+
+  <footer class="site-footer" id="footer">
+    <div class="container footer-row">
+      <p>Day 04 completed: responsive redesign of the Day 03 landing page.</p>
+      <a href="#top">Back to top</a>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.main-nav');
+    toggle.addEventListener('click', () => {
+      const expanded = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!expanded));
+      nav.classList.toggle('open');
+    });
+  </script>
 </body>
 </html>
