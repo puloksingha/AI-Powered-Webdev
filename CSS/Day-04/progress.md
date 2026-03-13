@@ -35,7 +35,7 @@
 5. 
 
 ## End of Day
-- [ ] Notes updated
-- [ ] Code committed
-- [ ] Code pushed
-- Commit message: feat(day-04): responsive redesign
+- [x] Notes updated
+- [x] Code committed
+- [x] Code pushed
+

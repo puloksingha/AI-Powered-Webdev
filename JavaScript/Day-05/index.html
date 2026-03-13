@@ -8,6 +8,28 @@
 <body>
   <main>
     <h1>Day 05 - JavaScript Fundamentals</h1>
+    <section aria-labelledby="calculator-title">
+      <h2 id="calculator-title">Mini Calculator</h2>
+      <label for="num-a">First number</label>
+      <input id="num-a" type="number" step="any" value="10" />
+
+      <label for="num-b">Second number</label>
+      <input id="num-b" type="number" step="any" value="2" />
+
+      <div>
+        <button type="button" data-op="add">Add</button>
+        <button type="button" data-op="subtract">Subtract</button>
+        <button type="button" data-op="multiply">Multiply</button>
+        <button type="button" data-op="divide">Divide</button>
+      </div>
+
+      <p><strong>Result:</strong> <span id="calc-result">-</span></p>
+    </section>
+
+    <section aria-labelledby="exercise-title">
+      <h2 id="exercise-title">10 JavaScript Exercises</h2>
+      <ol id="exercise-results"></ol>
+    </section>
   </main>
   <script src="app.js"></script>
 </body>
