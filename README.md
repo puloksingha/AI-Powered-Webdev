@@ -264,7 +264,7 @@ A landing page with header, hero, features grid, and footer.
 
 ## 📅 Day 04 — Responsive Web Design ⏳
 
-> **Status:** Upcoming
+> **Status:** Completed
 
 ### Objective
 Make layouts responsive using a mobile-first strategy.
