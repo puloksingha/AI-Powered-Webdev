@@ -35,7 +35,7 @@ Whether you're a beginner or an experienced developer looking to leverage AI in 
 | Day 02 | CSS Fundamentals | [`CSS/Day-02/`](CSS/Day-02/) | [`index.html`](CSS/Day-02/index.html), [`styles.css`](CSS/Day-02/styles.css), [`README.md`](CSS/Day-02/README.md), [`progress.md`](CSS/Day-02/progress.md) | ✅ Completed |
 | Day 03 | CSS Layouts — Flexbox & Grid | [`CSS/Day-03/`](CSS/Day-03/) | [`index.html`](CSS/Day-03/index.html), [`styles.css`](CSS/Day-03/styles.css), [`README.md`](CSS/Day-03/README.md), [`progress.md`](CSS/Day-03/progress.md) | ✅ Completed |
 | Day 04 | Responsive Web Design | [`CSS/Day-04/`](CSS/Day-04/) | [`index.html`](CSS/Day-04/index.html), [`styles.css`](CSS/Day-04/styles.css), [`README.md`](CSS/Day-04/README.md), [`progress.md`](CSS/Day-04/progress.md) | ⏳ Upcoming |
-| Day 05 | JavaScript Fundamentals | [`JavaScript/Day-05/`](JavaScript/Day-05/) | [`index.html`](JavaScript/Day-05/index.html), [`app.js`](JavaScript/Day-05/app.js), [`README.md`](JavaScript/Day-05/README.md), [`progress.md`](JavaScript/Day-05/progress.md) | ⏳ Upcoming |
+| Day 05 | JavaScript Fundamentals | [`JavaScript/Day-05/`](JavaScript/Day-05/) | [`index.html`](JavaScript/Day-05/index.html), [`app.js`](JavaScript/Day-05/app.js), [`README.md`](JavaScript/Day-05/README.md), [`progress.md`](JavaScript/Day-05/progress.md) | ✅ Completed |
 | Day 06 | DOM Manipulation | [`JavaScript/Day-06/`](JavaScript/Day-06/) | [`index.html`](JavaScript/Day-06/index.html), [`styles.css`](JavaScript/Day-06/styles.css), [`app.js`](JavaScript/Day-06/app.js), [`README.md`](JavaScript/Day-06/README.md), [`progress.md`](JavaScript/Day-06/progress.md) | ⏳ Upcoming |
 | Day 07 | ES6+ Modern JavaScript | [`JavaScript/Day-07/`](JavaScript/Day-07/) | [`index.html`](JavaScript/Day-07/index.html), [`app.js`](JavaScript/Day-07/app.js), [`README.md`](JavaScript/Day-07/README.md), [`progress.md`](JavaScript/Day-07/progress.md) | ⏳ Upcoming |
 | Day 08 | AI-Assisted Coding with GitHub Copilot | [`Projects/Day-08/`](Projects/Day-08/) | [`README.md`](Projects/Day-08/README.md), [`notes.md`](Projects/Day-08/notes.md), [`progress.md`](Projects/Day-08/progress.md) | ⏳ Upcoming |
@@ -288,9 +288,12 @@ Convert the Day 03 layout into fully responsive versions for mobile, tablet, and
 
 ---
 
-## 📅 Day 05 — JavaScript Fundamentals ⏳
+## 📅 Day 05 — JavaScript Fundamentals ✅
 
-> **Status:** Upcoming
+> **Status:** Completed · **Date:** March 13, 2026
+
+### What was built
+A working **mini calculator** with modular operation functions and input validation, plus **10 solved JavaScript exercises** rendered on the page and logged to the console for verification.
 
 ### Objective
 Understand JavaScript syntax, logic, and core data structures.
@@ -303,14 +306,20 @@ Understand JavaScript syntax, logic, and core data structures.
 ### Deliverable
 A mini calculator and 10 solved JS exercises.
 
+### Completion Highlights
+- ✅ Calculator operations implemented: add, subtract, multiply, divide
+- ✅ Invalid input and divide-by-zero handling added
+- ✅ 10 core exercises completed (variables, conditions, loops, functions, arrays, objects)
+- ✅ Results rendered in UI and verified through console logs
+
 ### Files
 
 | File | Description |
 |------|-------------|
-| [`JavaScript/Day-05/index.html`](JavaScript/Day-05/index.html) | HTML shell for exercises |
-| [`JavaScript/Day-05/app.js`](JavaScript/Day-05/app.js) | JS fundamentals and calculator logic |
+| [`JavaScript/Day-05/index.html`](JavaScript/Day-05/index.html) | Calculator UI and exercise results container |
+| [`JavaScript/Day-05/app.js`](JavaScript/Day-05/app.js) | Modular calculator logic and 10 solved JS exercises |
 | [`JavaScript/Day-05/README.md`](JavaScript/Day-05/README.md) | Day objectives and checklist |
-| [`JavaScript/Day-05/progress.md`](JavaScript/Day-05/progress.md) | Daily progress tracker |
+| [`JavaScript/Day-05/progress.md`](JavaScript/Day-05/progress.md) | Completed daily progress tracker |
 
 ---
 
